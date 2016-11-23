@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MJBluetoothManager_Example' do
+  pod 'MJBluetoothManager', :path => '../'
+
+  target 'MJBluetoothManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
