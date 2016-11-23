@@ -1,0 +1,16 @@
+PODS:
+  - MJBluetoothManager (0.1.0)
+
+DEPENDENCIES:
+  - MJBluetoothManager (from `../`)
+
+EXTERNAL SOURCES:
+  MJBluetoothManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJBluetoothManager: 0bdb91d354a95b851e83f4204b68557a570b3fb7
+
+PODFILE CHECKSUM: eea8b1aac2e8c53f1dc160382f462e93307c0bd1
+
+COCOAPODS: 1.1.1
