@@ -7,6 +7,8 @@
 //
 
 #import "MJViewController.h"
+#import <MJBluetoothManager/MJBTCentralManager.h>
+#import <MJBluetoothManager/MJBTPeripheral.h>
 
 @interface MJViewController ()
 
@@ -17,8 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
