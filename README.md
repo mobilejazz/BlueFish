@@ -1,5 +1,4 @@
-
-![Mobile Jazz Motis](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-mjbluetoothmanager.png)
+![MJBluetoothManager](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-bluefish-ios.jpg)
 # ![Mobile Jazz Badge](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/icons/mj-40x40.png) MJBluetoothManager
 
 [![CI Status](http://img.shields.io/travis/Paolo Tagliani/MJBluetoothManager.svg?style=flat)](https://travis-ci.org/Paolo Tagliani/MJBluetoothManager)
