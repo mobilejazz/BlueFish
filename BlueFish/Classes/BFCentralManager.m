@@ -19,7 +19,7 @@
 #import "BFPeripheral.h"
 #import "BFPeripheral_Private.h"
 
-#import "NSArray+Peripherals.h"
+#import "NSArray+BlueFish.h"
 #import "NSError+BlueFish.h"
 
 #import "BFErrorConstants.h"
@@ -87,7 +87,7 @@
 
 - (BFPeripheral *)retrievePeripheralWithID:(NSString *)ID
 {
-    CBPeripheral *peripheral = [_internalPeripheralList peripheralWithID:ID];
+    CBPeripheral *peripheral = [_internalPeripheralList bf_peripheralWithID:ID];
 
     if (peripheral)
     {
