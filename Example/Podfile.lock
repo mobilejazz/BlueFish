@@ -1,5 +1,5 @@
 PODS:
-  - BlueFish (0.1.0)
+  - BlueFish (1.0.0)
 
 DEPENDENCIES:
   - BlueFish (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlueFish: 7ca591948e81bfefa429abf11d859ecdaaabd483
+  BlueFish: 51938d8aa7966c658887fa91e80b79e302e76a75
 
 PODFILE CHECKSUM: 03fe047d2b2f534ad0d532a6195c2e7170e7bbf1
 

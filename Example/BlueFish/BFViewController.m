@@ -7,7 +7,7 @@
 //
 
 #import "BFViewController.h"
-#import "BFCentralManager.h"
+#import <BlueFish/BlueFish.h>
 
 @interface BFViewController ()
 

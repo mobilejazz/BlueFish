@@ -2,10 +2,11 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "BFErrorConstants.h"
-#import "BFPeripheral_Private.h"
 #import "BFCentralManager.h"
+#import "BFErrorConstants.h"
 #import "BFPeripheral.h"
+#import "BFPeripheral_Private.h"
+#import "BlueFish.h"
 #import "CBPeripheral+BlueFish.h"
 #import "NSArray+BlueFish.h"
 #import "NSError+BlueFish.h"
