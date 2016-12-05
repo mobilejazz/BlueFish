@@ -124,7 +124,7 @@ We can subscribe to a peripheral notification on a characteristic value change. 
 
 #pragma mark - BFNotificationDelegate
 
-    - (void)didNotifiedValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
+    - (void)didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
     {
         NSLog(@"Received: %@ from characteristic:%@", [value description], characteristicID);
     }
