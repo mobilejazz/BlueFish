@@ -18,11 +18,6 @@
 
 @implementation CBPeripheral (BlueFish)
 
-- (BOOL)isInitializedData
-{
-    return self.services != nil;
-}
-
 - (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID
 {
     for (CBService *service in self.services)
