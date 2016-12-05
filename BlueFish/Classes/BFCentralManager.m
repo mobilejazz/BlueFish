@@ -9,12 +9,12 @@
 #import "BFCentralManager.h"
 
 #import "BFPeripheral.h"
-#import "BFBTPeripheral_Private.h"
+#import "BFPeripheral_Private.h"
 
 #import "NSArray+Peripherals.h"
 #import "NSError+Utilities.h"
 
-#import "BFBTErrorConstants.h"
+#import "BFErrorConstants.h"
 
 @interface BFCentralManager ()
 
@@ -29,8 +29,8 @@
 @property (nonatomic, strong, readwrite) NSArray *servicesToScan;
 @property (nonatomic, assign, readwrite) BOOL scanningEnabled;
 
-@property (nonatomic, copy, readwrite) void (^ BFBTDeviceScanBlock)(BFPeripheral *peripheral, NSError *error);
-@property (nonatomic, copy, readwrite) void (^ BFBTPeripheralConnectionBlock)(NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFDeviceScanBlock)(BFPeripheral *peripheral, NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFPeripheralConnectionBlock)(NSError *error);
 
 @end
 
@@ -63,7 +63,7 @@
 
 - (void)startScanningWithServices:(NSArray <CBUUID *> *)services updateBlock:(void (^)(BFPeripheral *peripheral, NSError *error))updateBlock
 {
-    self.BFBTDeviceScanBlock = updateBlock;
+    self.BFDeviceScanBlock = updateBlock;
     self.servicesToScan = services;
 
     [self bf_startScanning];
@@ -71,7 +71,7 @@
 
 - (void)stopScanning
 {
-    self.BFBTDeviceScanBlock = nil;
+    self.BFDeviceScanBlock = nil;
     [_centralManager stopScan];
 }
 
@@ -110,7 +110,7 @@
     }
 
     self.connectingPeripheral = peripheral.BTPeripheral;
-    self.BFBTPeripheralConnectionBlock = completionBlock;
+    self.BFPeripheralConnectionBlock = completionBlock;
 
     [_centralManager connectPeripheral:_connectingPeripheral options:nil];
 }
@@ -127,7 +127,7 @@
         return;
     }
 
-    self.BFBTPeripheralConnectionBlock = nil;
+    self.BFPeripheralConnectionBlock = nil;
     self.connectingPeripheral = nil;
 
     [_centralManager cancelPeripheralConnection:peripheral.BTPeripheral];
@@ -154,18 +154,18 @@
     switch (central.state)
     {
         case CBCentralManagerStateUnsupported:
-            if (_BFBTDeviceScanBlock)
+            if (_BFDeviceScanBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFBTDeviceScanBlock(nil, [NSError createErrorWithDomain:BFBTErrorDomain code:BFBTErrorCodeDeviceNotSupported description:nil]);
+                    _BFDeviceScanBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotSupported description:nil]);
                 });
             }
             break;
         case CBCentralManagerStateUnauthorized:
-            if (_BFBTDeviceScanBlock)
+            if (_BFDeviceScanBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFBTDeviceScanBlock(nil, [NSError createErrorWithDomain:BFBTErrorDomain code:BFBTErrorCodeBluetoothNotAuthorized description:nil]);
+                    _BFDeviceScanBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeBluetoothNotAuthorized description:nil]);
                 });
             }
             break;
@@ -199,10 +199,10 @@
         self.peripheralList[peripheral] = bfPeripheral;
     }
     __weak typeof(self) weakSelf = self;
-    if (_BFBTDeviceScanBlock)
+    if (_BFDeviceScanBlock)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            weakSelf.BFBTDeviceScanBlock(_peripheralList[peripheral], nil);
+            weakSelf.BFDeviceScanBlock(_peripheralList[peripheral], nil);
         });
     }
 }
@@ -214,11 +214,11 @@
         self.connectingPeripheral = nil;
         self.connectedPeripheral = _peripheralList[peripheral];
 
-        if (_BFBTPeripheralConnectionBlock)
+        if (_BFPeripheralConnectionBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFBTPeripheralConnectionBlock(nil);
-                self.BFBTPeripheralConnectionBlock = nil;
+                _BFPeripheralConnectionBlock(nil);
+                self.BFPeripheralConnectionBlock = nil;
             });
         }
     }
@@ -235,11 +235,11 @@
         self.connectingPeripheral = nil;
         self.connectedPeripheral = nil;
 
-        if (_BFBTPeripheralConnectionBlock)
+        if (_BFPeripheralConnectionBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFBTPeripheralConnectionBlock(error);
-                self.BFBTPeripheralConnectionBlock = nil;
+                _BFPeripheralConnectionBlock(error);
+                self.BFPeripheralConnectionBlock = nil;
             });
         }
     }

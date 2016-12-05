@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BFBTErrorConstants.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.h">
+      <file leaf-file-name="CBPeripheral+Helper.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/CBPeripheral+Helper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="45">
+              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -37,10 +37,15 @@
       <find>MJBTCharacteristicsListReadBlock</find>
       <find>mj_</find>
       <find>mj</find>
+      <find>btbt</find>
+      <find>bfbt</find>
     </findStrings>
     <replaceStrings>
       <replace>BFBT</replace>
       <replace>BFBTCharacteristicsListReadBlock</replace>
+      <replace>BFPeripheralConnectionBlock</replace>
+      <replace>BFServiceDiscoveryBlock</replace>
+      <replace>BFCharacteristicsListReadBlock</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -48,12 +53,14 @@
       <list>
         <option value="$PROJECT_DIR$/../BlueFish/Classes/MJBTCentralManager.h" />
         <option value="$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.h" />
-        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.h" />
-        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.m" />
-        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.m" />
-        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.h" />
         <option value="$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.m" />
         <option value="$PROJECT_DIR$/../BlueFish/Classes/CBPeripheral+Helper.m" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.h" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.m" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFErrorConstants.h" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.h" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.m" />
+        <option value="$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral_Private.h" />
       </list>
     </option>
   </component>
@@ -179,12 +186,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480947631398</updated>
-      <workItem from="1480947632775" duration="721000" />
+      <workItem from="1480947632775" duration="1071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721000" />
+    <option name="totallyTimeSpent" value="1071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2556" height="1057" extended-state="6" />
@@ -222,174 +229,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <marker date="1480947722000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1480947722000" expanded="false" signature="113:178" ph="..." />
-            <marker date="1480947722000" expanded="true" signature="236:364" ph="..." />
-            <marker date="1480947722000" expanded="true" signature="370:531" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="598:2694" ph="..." />
-            <marker date="1480947722000" expanded="true" signature="600:642" ph="/.../" />
-            <marker date="1480947722000" expanded="true" signature="719:798" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="908:950" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="1054:1321" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="1465:1501" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="1560:1805" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="1921:2034" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="2093:2233" ph="/**...*/" />
-            <marker date="1480947722000" expanded="true" signature="2333:2633" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding>
-            <marker date="1480947975000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1480947975000" expanded="false" signature="113:178" ph="..." />
-            <marker date="1480947975000" expanded="true" signature="214:319" ph="..." />
-            <marker date="1480947975000" expanded="true" signature="382:3356" ph="..." />
-            <marker date="1480947975000" expanded="true" signature="850:1055" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="1155:1387" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="1462:1590" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="1689:1843" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="1945:2120" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="2242:2430" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="2635:2873" ph="/**...*/" />
-            <marker date="1480947975000" expanded="true" signature="3041:3222" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="210" column="10" lean-forward="false" selection-start-line="210" selection-start-column="10" selection-end-line="210" selection-end-column="10" />
-          <folding>
-            <marker date="1480948196000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1480948196000" expanded="false" signature="113:222" ph="..." />
-            <marker date="1480948196000" expanded="true" signature="250:1322" ph="..." />
-            <marker date="1480948196000" expanded="true" signature="322:349" ph="/.../" />
-            <marker date="1480948196000" expanded="true" signature="691:726" ph="/.../" />
-            <marker date="1480948196000" expanded="true" signature="986:1010" ph="/.../" />
-            <marker date="1480948196000" expanded="true" signature="1356:11294" ph="..." />
-            <marker date="1480948196000" expanded="true" signature="1422:2067" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="2167:2791" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="2192:2787" ph="^(NSArray *services, NSError *servicesError){...}" />
-            <marker date="1480948196000" expanded="true" signature="2381:2453" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="2534:2779" ph="^(NSError *characteristicsError){...}" />
-            <marker date="1480948196000" expanded="true" signature="2674:2753" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="2883:3014" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="3041:3094" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="3147:3212" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="3250:3288" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="3340:3598" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="3732:4051" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="4160:4372" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="4503:4939" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="5114:5365" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="5502:5978" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="6111:6385" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="6457:6931" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="6831:6911" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="6967:7568" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="7468:7548" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="7696:7929" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="7850:7919" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="8058:8404" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="8192:8266" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="8542:10247" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="8952:9042" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="9838:9986" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="10070:10148" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="10397:10811" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="10638:10801" ph="^{...}" />
-            <marker date="1480948196000" expanded="true" signature="10948:11292" ph="{...}" />
-            <marker date="1480948196000" expanded="true" signature="11119:11202" ph="^{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
-          <folding>
-            <marker date="1480948230000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1480948230000" expanded="true" signature="113:289" ph="..." />
-            <marker date="1480948230000" expanded="true" signature="321:1083" ph="..." />
-            <marker date="1480948230000" expanded="true" signature="1121:7985" ph="..." />
-            <marker date="1480948230000" expanded="true" signature="1144:1551" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="1712:1781" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="1924:2037" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="2060:2131" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="2227:2791" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="2527:2538" ph="@[...]" />
-            <marker date="1480948230000" expanded="true" signature="2933:3255" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="3313:3368" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="3434:3645" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="3704:3976" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="3857:3909" ph="@{...}" />
-            <marker date="1480948230000" expanded="true" signature="4084:5412" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="4276:4445" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="4639:4812" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="5047:5122" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="5604:6116" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="6018:6106" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="6217:6642" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="6495:6622" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="6772:7298" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="7149:7278" ph="^{...}" />
-            <marker date="1480948230000" expanded="true" signature="7425:7983" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="7869:7963" ph="^{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/CBPeripheral+Helper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <marker date="1479894199000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1479894199000" expanded="false" signature="113:178" ph="..." />
-            <marker date="1479894199000" expanded="true" signature="212:880" ph="..." />
-            <marker date="1479894199000" expanded="true" signature="214:407" ph="/**...*/" />
-            <marker date="1479894199000" expanded="true" signature="483:770" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFBTPeripheral_Private.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480947722000" expanded="true" signature="0:92" ph="//..." />
-            <marker date="1480947722000" expanded="false" signature="102:192" ph="..." />
-            <marker date="1480947722000" expanded="true" signature="220:413" ph="..." />
-            <marker date="1480947722000" expanded="true" signature="222:346" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/CBPeripheral+Helper.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
-            <marker date="1480948230000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1480948230000" expanded="true" signature="166:1464" ph="..." />
-            <marker date="1480948230000" expanded="true" signature="203:239" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="313:585" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="694:835" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="923:1116" ph="{...}" />
-            <marker date="1480948230000" expanded="true" signature="1224:1462" ph="{...}" />
+            <marker date="1480948615000" expanded="true" signature="0:155" ph="//..." />
+            <marker date="1480948615000" expanded="true" signature="218:1516" ph="..." />
+            <marker date="1480948615000" expanded="true" signature="255:291" ph="{...}" />
+            <marker date="1480948615000" expanded="true" signature="365:637" ph="{...}" />
+            <marker date="1480948615000" expanded="true" signature="746:887" ph="{...}" />
+            <marker date="1480948615000" expanded="true" signature="975:1168" ph="{...}" />
+            <marker date="1480948615000" expanded="true" signature="1276:1514" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -399,8 +250,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479894199000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1479894199000" expanded="true" signature="194:248" ph="..." />
+            <marker date="1480948859000" expanded="true" signature="0:155" ph="//..." />
+            <marker date="1480948859000" expanded="true" signature="246:300" ph="..." />
           </folding>
         </state>
       </provider>
@@ -410,10 +261,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479894199000" expanded="true" signature="0:103" ph="//..." />
-            <marker date="1479894199000" expanded="false" signature="113:175" ph="..." />
-            <marker date="1479894199000" expanded="true" signature="200:617" ph="..." />
-            <marker date="1479894199000" expanded="true" signature="266:615" ph="{...}" />
+            <marker date="1480948638000" expanded="true" signature="0:155" ph="//..." />
+            <marker date="1480948638000" expanded="false" signature="165:227" ph="..." />
+            <marker date="1480948638000" expanded="true" signature="252:669" ph="..." />
+            <marker date="1480948638000" expanded="true" signature="318:667" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -423,8 +274,8 @@
         <state relative-caret-position="210">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
-            <marker date="1479895602000" expanded="true" signature="0:153" ph="//..." />
-            <marker date="1479895602000" expanded="true" signature="220:488" ph="..." />
+            <marker date="1480948418000" expanded="true" signature="0:153" ph="//..." />
+            <marker date="1480948418000" expanded="true" signature="220:488" ph="..." />
           </folding>
         </state>
       </provider>
@@ -434,29 +285,183 @@
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="6" />
           <folding>
-            <marker date="1479895602000" expanded="true" signature="0:153" ph="//..." />
-            <marker date="1479895602000" expanded="true" signature="209:1022" ph="..." />
-            <marker date="1479895602000" expanded="true" signature="334:505" ph="{...}" />
-            <marker date="1479895602000" expanded="true" signature="379:423" ph="@{...}" />
-            <marker date="1479895602000" expanded="true" signature="658:1020" ph="{...}" />
+            <marker date="1480948423000" expanded="true" signature="0:153" ph="//..." />
+            <marker date="1480948423000" expanded="true" signature="209:1022" ph="..." />
+            <marker date="1480948423000" expanded="true" signature="334:505" ph="{...}" />
+            <marker date="1480948423000" expanded="true" signature="379:423" ph="@{...}" />
+            <marker date="1480948423000" expanded="true" signature="658:1020" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.m">
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <marker date="1480948657000" expanded="true" signature="0:152" ph="//..." />
+            <marker date="1480948657000" expanded="false" signature="162:227" ph="..." />
+            <marker date="1480948657000" expanded="true" signature="285:413" ph="..." />
+            <marker date="1480948657000" expanded="true" signature="419:580" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="647:2743" ph="..." />
+            <marker date="1480948657000" expanded="true" signature="649:691" ph="/.../" />
+            <marker date="1480948657000" expanded="true" signature="768:847" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="957:999" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="1103:1370" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="1514:1550" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="1609:1854" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="1970:2083" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="2142:2282" ph="/**...*/" />
+            <marker date="1480948657000" expanded="true" signature="2382:2682" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFCentralManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="250" column="51" lean-forward="false" selection-start-line="250" selection-start-column="49" selection-end-line="250" selection-end-column="51" />
+          <folding>
+            <marker date="1480950874000" expanded="true" signature="0:6" ph="//..." />
+            <marker date="1480950874000" expanded="true" signature="0:152" ph="//..." />
+            <marker date="1480950874000" expanded="false" signature="162:334" ph="..." />
+            <marker date="1480950874000" expanded="true" signature="366:1124" ph="..." />
+            <marker date="1480950874000" expanded="true" signature="1162:7986" ph="..." />
+            <marker date="1480950874000" expanded="true" signature="1185:1592" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="1753:1822" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="1965:2076" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="2099:2168" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="2264:2828" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="2564:2575" ph="@[...]" />
+            <marker date="1480950874000" expanded="true" signature="2970:3290" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="3348:3403" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="3469:3678" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="3737:4009" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="3890:3942" ph="@{...}" />
+            <marker date="1480950874000" expanded="true" signature="4117:5429" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="4307:4470" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="4662:4829" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="5064:5139" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="5621:6129" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="6033:6119" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="6230:6649" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="6506:6629" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="6779:7299" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="7154:7279" ph="^{...}" />
+            <marker date="1480950874000" expanded="true" signature="7426:7984" ph="{...}" />
+            <marker date="1480950874000" expanded="true" signature="7870:7964" ph="^{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFErrorConstants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <marker date="1480950874000" expanded="true" signature="0:152" ph="//..." />
+            <marker date="1480950874000" expanded="true" signature="269:444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFErrorConstants.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <marker date="1480948196000" expanded="true" signature="0:154" ph="//..." />
+            <marker date="1480950874000" expanded="true" signature="0:154" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFBTErrorConstants.h">
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <marker date="1480950947000" expanded="true" signature="0:148" ph="//..." />
+            <marker date="1480950947000" expanded="false" signature="158:223" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="257:362" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="425:3397" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="891:1096" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="1196:1428" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="1503:1631" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="1730:1884" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="1986:2161" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="2283:2471" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="2676:2914" ph="/**...*/" />
+            <marker date="1480950947000" expanded="true" signature="3082:3263" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <marker date="1480950947000" expanded="true" signature="0:148" ph="//..." />
+            <marker date="1480950947000" expanded="false" signature="158:265" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="293:1359" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="365:392" ph="/.../" />
+            <marker date="1480950947000" expanded="true" signature="728:763" ph="/.../" />
+            <marker date="1480950947000" expanded="true" signature="1023:1047" ph="/.../" />
+            <marker date="1480950947000" expanded="true" signature="1393:11293" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="1459:2104" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="2204:2828" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="2229:2824" ph="^(NSArray *services, NSError *servicesError){...}" />
+            <marker date="1480950947000" expanded="true" signature="2418:2490" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="2571:2816" ph="^(NSError *characteristicsError){...}" />
+            <marker date="1480950947000" expanded="true" signature="2711:2790" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="2920:3051" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="3078:3131" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="3184:3249" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="3287:3325" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="3377:3635" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="3769:4082" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="4191:4401" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="4532:4964" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="5139:5388" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="5525:5997" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="6130:6404" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="6476:6946" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="6848:6926" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="6982:7579" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="7481:7559" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="7707:7936" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="7859:7926" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="8065:8407" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="8197:8269" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="8545:10246" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="8953:9041" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="9837:9985" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="10069:10147" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="10396:10810" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="10637:10800" ph="^{...}" />
+            <marker date="1480950947000" expanded="true" signature="10947:11291" ph="{...}" />
+            <marker date="1480950947000" expanded="true" signature="11118:11201" ph="^{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/BFPeripheral_Private.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <marker date="1480950947000" expanded="true" signature="0:104" ph="//..." />
+            <marker date="1480950947000" expanded="false" signature="114:204" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="232:425" ph="..." />
+            <marker date="1480950947000" expanded="true" signature="234:358" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlueFish/Classes/CBPeripheral+Helper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>

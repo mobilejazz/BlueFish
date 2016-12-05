@@ -1,5 +1,5 @@
 //
-//  BFBTPeripheral_Private.h
+//  BFPeripheral_Private.h
 //  BFBluetoothManager
 //
 //  Created by Paolo Tagliani on 23/11/16.

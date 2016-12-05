@@ -9,7 +9,7 @@
 #import "BFPeripheral.h"
 #import "CBPeripheral+Helper.h"
 #import "NSError+Utilities.h"
-#import "BFBTErrorConstants.h"
+#import "BFErrorConstants.h"
 
 @interface BFPeripheral ()
 
@@ -18,9 +18,9 @@
 /*
  * Completion blocks
  */
-@property (nonatomic, copy, readwrite) void (^ BFBTServiceDiscoveryBlock)(NSArray <CBService *> *services, NSError *error);
-@property (nonatomic, copy, readwrite) void (^ BFBTCharacteristicDiscoveryBlock)(NSError *error);
-@property (nonatomic, copy, readwrite) void (^ BFBTCharacteristicsListReadBlock)(NSDictionary *data, NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFServiceDiscoveryBlock)(NSArray <CBService *> *services, NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFCharacteristicDiscoveryBlock)(NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFCharacteristicsListReadBlock)(NSDictionary *data, NSError *error);
 
 /*
  * Read/write blocks storage
@@ -126,11 +126,11 @@
 {
     if (_BTPeripheral.state != CBPeripheralStateConnected)
     {
-        completionBlock(nil, [NSError createErrorWithDomain:BFBTErrorDomain code:BFBTErrorCodeDeviceNotConnected description:nil]);
+        completionBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotConnected description:nil]);
         return;
     }
 
-    self.BFBTServiceDiscoveryBlock = completionBlock;
+    self.BFServiceDiscoveryBlock = completionBlock;
     [_BTPeripheral discoverServices:nil];
 }
 
@@ -138,7 +138,7 @@
 
 - (void)listCharacteristics:(void (^)(NSError *))completionBlock
 {
-    self.BFBTCharacteristicDiscoveryBlock = completionBlock;
+    self.BFCharacteristicDiscoveryBlock = completionBlock;
     NSArray *services = _BTPeripheral.services;
     self.temporaryServiceArray = [services mutableCopy];
 
@@ -153,7 +153,7 @@
 
     if (!characteristic)
     {
-        completionBlock(nil, [NSError createErrorWithDomain:BFBTErrorDomain code:BFBTErrorCodeCharacteristicNotExists description:nil]);
+        completionBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
         return;
     }
 
@@ -162,7 +162,7 @@
 
 - (void)readCharacteristics:(NSArray <NSString *> *)characteristicsID completionBlock:(void (^)(NSDictionary <NSString *, NSData *> *values, NSError *error))completionBlock
 {
-    self.BFBTCharacteristicsListReadBlock = completionBlock;
+    self.BFCharacteristicsListReadBlock = completionBlock;
 
     self.tempReadCharacteristicsArray = [characteristicsID mutableCopy];
     self.tempReadCharacteristicsValues = [NSMutableDictionary dictionary];
@@ -175,7 +175,7 @@
     CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:characteristicID];
     if (!characteristic)
     {
-        completionBlock([NSError createErrorWithDomain:BFBTErrorDomain code:BFBTErrorCodeCharacteristicNotExists description:nil]);
+        completionBlock([NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
         return;
     }
 
@@ -202,10 +202,10 @@
     else
     {
         __weak typeof(self) weakSelf = self;
-        if (_BFBTCharacteristicDiscoveryBlock)
+        if (_BFCharacteristicDiscoveryBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                weakSelf.BFBTCharacteristicDiscoveryBlock(nil);
+                weakSelf.BFCharacteristicDiscoveryBlock(nil);
             });
         }
     }
@@ -223,10 +223,10 @@
         self.tempReadCharacteristicsArray = nil;
         NSDictionary *values = [_tempReadCharacteristicsValues copy];
 
-        if (_BFBTCharacteristicsListReadBlock)
+        if (_BFCharacteristicsListReadBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFBTCharacteristicsListReadBlock(values, nil);
+                _BFCharacteristicsListReadBlock(values, nil);
             });
         }
     }
@@ -238,10 +238,10 @@
 {
     NSArray *services = error ? nil : peripheral.services;
 
-    if (_BFBTServiceDiscoveryBlock)
+    if (_BFServiceDiscoveryBlock)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            _BFBTServiceDiscoveryBlock(services, error);
+            _BFServiceDiscoveryBlock(services, error);
         });
     }
 }
@@ -250,10 +250,10 @@
 {
     if (error)
     {
-        if (_BFBTCharacteristicDiscoveryBlock)
+        if (_BFCharacteristicDiscoveryBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFBTCharacteristicDiscoveryBlock(error);
+                _BFCharacteristicDiscoveryBlock(error);
             });
         }
     }
@@ -273,10 +273,10 @@
         {
             NSDictionary *values = [_tempReadCharacteristicsValues copy];
 
-            if (_BFBTCharacteristicsListReadBlock)
+            if (_BFCharacteristicsListReadBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFBTCharacteristicsListReadBlock(values, error);
+                    _BFCharacteristicsListReadBlock(values, error);
                 });
             }
             return;

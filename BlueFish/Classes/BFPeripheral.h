@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@protocol BFBTNotificationDelegate <NSObject>
+@protocol BFNotificationDelegate <NSObject>
 
 - (void)didNotifiedValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID;
 
@@ -24,7 +24,7 @@
 @property (nonatomic, strong, readonly) NSArray <CBService *> *services;
 @property (nonatomic, strong, readonly) NSArray <CBCharacteristic *> *characteristics;
 
-@property (nonatomic, weak, readwrite) id <BFBTNotificationDelegate> notificationDelegate;
+@property (nonatomic, weak, readwrite) id <BFNotificationDelegate> notificationDelegate;
 
 #pragma mark - Getters
 

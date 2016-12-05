@@ -2,8 +2,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "BFBTErrorConstants.h"
-#import "BFBTPeripheral_Private.h"
+#import "BFErrorConstants.h"
+#import "BFPeripheral_Private.h"
 #import "BFCentralManager.h"
 #import "BFPeripheral.h"
 #import "CBPeripheral+Helper.h"

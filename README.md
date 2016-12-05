@@ -1,6 +1,6 @@
 
-![Mobile Jazz Motis](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-mjbluetoothmanager.png)
-# ![Mobile Jazz Badge](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/icons/mj-40x40.png) MJBluetoothManager
+![Mobile Jazz Motis](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-bluefish-ios.jpg)
+# ![Mobile Jazz Badge](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/icons/mj-40x40.png) BlueFish
 
 [![CI Status](http://img.shields.io/travis/Paolo Tagliani/MJBluetoothManager.svg?style=flat)](https://travis-ci.org/Paolo Tagliani/MJBluetoothManager)
 [![Version](https://img.shields.io/cocoapods/v/MJBluetoothManager.svg?style=flat)](http://cocoapods.org/pods/MJBluetoothManager)
@@ -9,19 +9,17 @@
 
 
 
-#MJBluetoothManager
-
 > CoreBluetooth with block-based APIs
 
-MJBluetoothManager is a wrapper around CoreBluetooth concepts like CBCentralManager and CBPeripheral. All the delegate based API are substituted with blocks.
+BlueFish is a wrapper around CoreBluetooth concepts like CBCentralManager and CBPeripheral. All the delegate based API are substituted with blocks.
 
 ## Installation
 
-MJBluetoothManager is available through [CocoaPods](http://cocoapods.org). To install
+BlueFish is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MJBluetoothManager"
+pod "BlueFish"
 ```
 
 ## Basic Usage
@@ -50,21 +48,21 @@ Example of use:
         }];
         return;
     }
-    
+
     //If not in cache, search for it in the nearby area
     [manager startScanningWithUpdateBlock:^(BFPeripheral *peripheral, NSError *error) {
         if ([peripheral.identifier isEqualToString:deviceID])
         {
             //Stop Scan
             [manager stopScanning];
-            
+
             //Connect to peripheral
             [manager connectToPeripheral:peripheral completionBlock:^(NSError *error) {
                 //TODO: Manage error or do operation on peripheral
             }];
         }
     }];
-``` 
+```
 
 ### BFPeripheral
 
@@ -85,32 +83,32 @@ After connection, a peripheral does not hold information about characteristics a
         NSLog(@"Peripheral services: %@", peripheral.services.description);
         NSLog(@"Peripheral characteristics: %@", peripheral.characteristics.description);
     }];
-    
+
     //Alternative version
     [peripheral listServices:^(NSArray<CBService *> *services, NSError *error) {
         NSLog(@"Peripheral services: %@", peripheral.services.description);
-        
+
         [peripheral listCharacteristics:^(NSError *error) {
             NSLog(@"Peripheral characteristics: %@", peripheral.characteristics.description);
         }];
     }];
-``` 
+```
 #### Read and write characteristics
 
 ```objective-c
 NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
     NSData *data = [@"Mobile Jazz" dataUsingEncoding:NSUTF8StringEncoding];
-    
+
     [peripheral writeCharacteristic:characteristicID data:data completionBlock:^(NSError *error) {
        //Handle error if needed ....
     }];
-    
+
     [peripheral readCharacteristic:characteristicID completionBlock:^(NSData *data, NSError *error) {
        //Handle error if needed ....
         NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"%@", string); //Mobile Jazz
     }];
-``` 
+```
 
 #### Notifications
 
@@ -119,22 +117,18 @@ We can subscribe to a peripheral notification on a characteristic value change. 
 ```objective-c
     NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
     peripheral.notificationDelegate = self;
-    
+
     [peripheral subscribeCharacteristicNotification:characteristicID completionBlock:^(NSError *error) {
         //Handle error if needed ....
     }];
-    
-#pragma mark - BFBTNotificationDelegate
-    
+
+#pragma mark - BFNotificationDelegate
+
     - (void)didNotifiedValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
     {
         NSLog(@"Received: %@ from characteristic:%@", [value description], characteristicID);
     }
-``` 
-
-## Author
-
-Paolo Tagliani, paolo@mobilejazz.com
+```
 
 ## TODO
 
@@ -142,4 +136,4 @@ Paolo Tagliani, paolo@mobilejazz.com
 
 ## License
 
-MJBluetoothManager is available under the MIT license. See the LICENSE file for more info.
+BlueFish is available under the MIT license. See the LICENSE file for more info.

@@ -1,12 +1,12 @@
 //
-//  BFBTErrorConstants.m
+//  BFErrorConstants.m
 //  BFBluetoothManager
 //
 //  Created by Paolo Tagliani on 29/07/16.
 //  Copyright © 2016 Mobile Jazz. All rights reserved.
 //
 
-#import "BFBTErrorConstants.h"
+#import "BFErrorConstants.h"
 
-NSString *const BFBTErrorDomain = @"BFBTErrorDomain";
+NSString *const BFErrorDomain = @"BFErrorDomain";
 

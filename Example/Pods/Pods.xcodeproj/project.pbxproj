@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */; };
-		2A2AE854C51941FFD9BAB99F9F149CAA /* BFBTPeripheral_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A2AE854C51941FFD9BAB99F9F149CAA /* BFPeripheral_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFPeripheral_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EF9B7A4C84A96D270EF7319D05EE613 /* Pods-BlueFish_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFF5FA6EE3C56E6B4E11D3998640675 /* Pods-BlueFish_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A112F0024D1B7257AE3602DBB85E5E /* NSError+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */; };
 		333BCEE04A03621728672582B09F7A02 /* Pods-BlueFish_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */; };
 		54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+Peripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */; };
-		5972221947A4505C71D176AE72A64879 /* BFBTErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */; };
+		5972221947A4505C71D176AE72A64879 /* BFErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF377461EA2229C9E1DEE73A8C8BF6 /* BFErrorConstants.m */; };
 		5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+Peripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = 220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */; };
 		6498D0E5A675729C07E6304E9E7724A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		69CA470D74E90F583D0B6E6E8098F5EE /* BFBTErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CA470D74E90F583D0B6E6E8098F5EE /* BFErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3694074BAC33DCC8736AFA97C776EE /* BFErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FCF9E553558F62D377A34F3272C3440 /* BFPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */; };
 		956460F1D0762649D9781410677E581B /* BFCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,8 +43,8 @@
 
 /* Begin PBXFileReference section */
 		027E3B8DDC87B7D5F9767DA8C99BECF8 /* Pods-BlueFish_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueFish_Example.modulemap"; sourceTree = "<group>"; };
-		04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFBTPeripheral_Private.h; sourceTree = "<group>"; };
-		0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFBTErrorConstants.h; sourceTree = "<group>"; };
+		04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFPeripheral_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFPeripheral_Private.h; sourceTree = "<group>"; };
+		0C3694074BAC33DCC8736AFA97C776EE /* BFErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFErrorConstants.h; sourceTree = "<group>"; };
 		0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueFish-dummy.m"; sourceTree = "<group>"; };
 		14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFCentralManager.h; sourceTree = "<group>"; };
 		1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueFish.xcconfig; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		49EC70013676852C165345AA23074A3F /* Pods-BlueFish_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueFish_Example-dummy.m"; sourceTree = "<group>"; };
 		505A1AD139E17F434EFACBE506FD2C4F /* Pods-BlueFish_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Example-resources.sh"; sourceTree = "<group>"; };
-		50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFBTErrorConstants.m; sourceTree = "<group>"; };
+		50FF377461EA2229C9E1DEE73A8C8BF6 /* BFErrorConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFErrorConstants.m; sourceTree = "<group>"; };
 		5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFPeripheral.m; sourceTree = "<group>"; };
 		62398A81832C0B41C280410D35296613 /* BFCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFCentralManager.m; sourceTree = "<group>"; };
 		6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFPeripheral.h; sourceTree = "<group>"; };
@@ -182,9 +182,9 @@
 		7842BFB5707A71B433BBF33C281B1495 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */,
-				50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */,
-				04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */,
+				0C3694074BAC33DCC8736AFA97C776EE /* BFErrorConstants.h */,
+				50FF377461EA2229C9E1DEE73A8C8BF6 /* BFErrorConstants.m */,
+				04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFPeripheral_Private.h */,
 				14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */,
 				62398A81832C0B41C280410D35296613 /* BFCentralManager.m */,
 				6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */,
@@ -267,8 +267,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69CA470D74E90F583D0B6E6E8098F5EE /* BFBTErrorConstants.h in Headers */,
-				2A2AE854C51941FFD9BAB99F9F149CAA /* BFBTPeripheral_Private.h in Headers */,
+				69CA470D74E90F583D0B6E6E8098F5EE /* BFErrorConstants.h in Headers */,
+				2A2AE854C51941FFD9BAB99F9F149CAA /* BFPeripheral_Private.h in Headers */,
 				956460F1D0762649D9781410677E581B /* BFCentralManager.h in Headers */,
 				6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */,
 				E9399180BD8B11240512ABD7892FDEDF /* BlueFish-umbrella.h in Headers */,
@@ -390,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5972221947A4505C71D176AE72A64879 /* BFBTErrorConstants.m in Sources */,
+				5972221947A4505C71D176AE72A64879 /* BFErrorConstants.m in Sources */,
 				95EBD36A76E726E03BF5294A75C83A29 /* BFCentralManager.m in Sources */,
 				7FCF9E553558F62D377A34F3272C3440 /* BFPeripheral.m in Sources */,
 				5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */,
