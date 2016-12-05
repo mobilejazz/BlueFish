@@ -4,8 +4,9 @@ Pod::Spec.new do |s|
   s.summary          = 'CoreBluetooth with block-based APIs'
   s.description      = "Simple wrapper around CoreBluetooth that replace delegate based API with block based API"
   s.homepage         = 'https://github.com/mobilejazz/BlueFish'
+  s.social_media_url = 'http://twitter.com/mobilejazzcom'
   s.license          = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
-  s.author           = { 'Paolo Tagliani' => 'paolo@mobilejazz.com' }
+  s.author           = { 'Mobile Jazz' => 'info@mobilejazz.com' }
   s.source           = { :git => 'https://github.com/mobilejazz/BlueFish.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'BlueFish/Classes/**/*'
