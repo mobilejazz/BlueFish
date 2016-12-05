@@ -129,6 +129,9 @@ We can subscribe to a peripheral notification on a characteristic value change. 
         NSLog(@"Received: %@ from characteristic:%@", [value description], characteristicID);
     }
 ```
+## Project Maintainer
+
+This open source project is maintained by [Paolo Tagliani](https://github.com/pablosproject).
 
 ## TODO
 
