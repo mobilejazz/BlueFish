@@ -2,10 +2,10 @@
 ![Mobile Jazz Motis](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-bluefish-ios.jpg)
 # ![Mobile Jazz Badge](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/icons/mj-40x40.png) BlueFish
 
-[![CI Status](http://img.shields.io/travis/Paolo Tagliani/MJBluetoothManager.svg?style=flat)](https://travis-ci.org/Paolo Tagliani/MJBluetoothManager)
-[![Version](https://img.shields.io/cocoapods/v/MJBluetoothManager.svg?style=flat)](http://cocoapods.org/pods/MJBluetoothManager)
-[![License](https://img.shields.io/cocoapods/l/MJBluetoothManager.svg?style=flat)](http://cocoapods.org/pods/MJBluetoothManager)
-[![Platform](https://img.shields.io/cocoapods/p/MJBluetoothManager.svg?style=flat)](http://cocoapods.org/pods/MJBluetoothManager)
+[![CI Status](http://img.shields.io/travis/Paolo Tagliani/MJBluetoothManager.svg?style=flat)](https://travis-ci.org/Paolo Tagliani/BlueFish)
+[![Version](https://img.shields.io/cocoapods/v/BlueFish.svg?style=flat)](http://cocoapods.org/pods/BlueFish)
+[![License](https://img.shields.io/cocoapods/l/BlueFish.svg?style=flat)](http://cocoapods.org/pods/BlueFish)
+[![Platform](https://img.shields.io/cocoapods/p/BlueFish.svg?style=flat)](http://cocoapods.org/pods/BlueFish)
 
 
 
