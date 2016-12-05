@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "NSArray+Peripherals.h"
+#import "NSArray+BlueFish.h"
 #import <CoreBluetooth/CBPeripheral.h>
 
-@implementation NSArray (Peripherals)
+@implementation NSArray (BlueFish)
 
-- (CBPeripheral *)peripheralWithID:(NSString *)id
+- (CBPeripheral *)bf_peripheralWithID:(NSString *)id
 {
     for (NSObject *obj in self)
     {

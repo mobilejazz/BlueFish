@@ -14,17 +14,17 @@
 // limitations under the License.
 //
 
-#import "NSError+Utilities.h"
+#import "NSError+BlueFish.h"
 
-@implementation NSError (Utilities)
+@implementation NSError (BlueFish)
 
-+ (NSError *)createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description
++ (NSError *)bf_createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description
 {
     NSDictionary *userInfo = description ? @{ NSLocalizedDescriptionKey : description } : nil;
     return [NSError errorWithDomain:domain code:code userInfo:userInfo];
 }
 
-+ (NSError *)createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description originalError:(NSString *)originalError
++ (NSError *)bf_createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description originalError:(NSString *)originalError
 {
     NSMutableDictionary *userinfo = [NSMutableDictionary dictionary];
     if (description)

@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */; };
+		093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+BlueFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+BlueFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+BlueFish.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+BlueFish.m */; };
 		2A2AE854C51941FFD9BAB99F9F149CAA /* BFPeripheral_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFPeripheral_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EF9B7A4C84A96D270EF7319D05EE613 /* Pods-BlueFish_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFF5FA6EE3C56E6B4E11D3998640675 /* Pods-BlueFish_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31A112F0024D1B7257AE3602DBB85E5E /* NSError+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */; };
+		31A112F0024D1B7257AE3602DBB85E5E /* NSError+BlueFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+BlueFish.m */; };
 		333BCEE04A03621728672582B09F7A02 /* Pods-BlueFish_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */; };
-		54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+Peripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+BlueFish.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+BlueFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */; };
 		5972221947A4505C71D176AE72A64879 /* BFErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF377461EA2229C9E1DEE73A8C8BF6 /* BFErrorConstants.m */; };
-		5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+Peripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = 220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */; };
+		5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+BlueFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+BlueFish.m */; };
 		6498D0E5A675729C07E6304E9E7724A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		69CA470D74E90F583D0B6E6E8098F5EE /* BFErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3694074BAC33DCC8736AFA97C776EE /* BFErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 		BFBE049CDD49770C41273C6888A7A59C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C1AC88A38C6A82855B1B3E55B78AD09D /* Pods-BlueFish_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */; };
 		E9399180BD8B11240512ABD7892FDEDF /* BlueFish-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD136ECA292785C30A72C314B9CFB70 /* BlueFish-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEE3C9A933A612F84061C67AFBBE3944 /* NSError+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE3C9A933A612F84061C67AFBBE3944 /* NSError+BlueFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FA286B8A4541F8A7A01108A2344BAE /* NSError+BlueFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +48,12 @@
 		0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueFish-dummy.m"; sourceTree = "<group>"; };
 		14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFCentralManager.h; sourceTree = "<group>"; };
 		1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueFish.xcconfig; sourceTree = "<group>"; };
-		220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Peripherals.m"; sourceTree = "<group>"; };
+		220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+BlueFish.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlueFish.m"; sourceTree = "<group>"; };
 		2745641DBF85B5F01A1DBBF75355076B /* Pods_BlueFish_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueFish_Example.framework; path = "Pods-BlueFish_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2526146DCCBFD4A39F5943D0EAD775 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3818EB17AD795B17D0A471D169223108 /* Pods-BlueFish_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueFish_Tests.modulemap"; sourceTree = "<group>"; };
-		3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Helper.h"; sourceTree = "<group>"; };
-		47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+Utilities.h"; sourceTree = "<group>"; };
+		3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+BlueFish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+BlueFish.h"; sourceTree = "<group>"; };
+		47FA286B8A4541F8A7A01108A2344BAE /* NSError+BlueFish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+BlueFish.h"; sourceTree = "<group>"; };
 		49B314C0A28F65CAB00DEC7E727BA46C /* BlueFish-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueFish-prefix.pch"; sourceTree = "<group>"; };
 		49EC70013676852C165345AA23074A3F /* Pods-BlueFish_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueFish_Example-dummy.m"; sourceTree = "<group>"; };
@@ -70,13 +70,13 @@
 		903CC3EA0EED45A0BF852F82F75C5D01 /* Pods-BlueFish_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueFish_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		950B6AA6223F030576573C51577FA692 /* Pods-BlueFish_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueFish_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+Utilities.m"; sourceTree = "<group>"; };
+		9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+BlueFish.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+BlueFish.m"; sourceTree = "<group>"; };
 		AA170EEFE73AC32FA87C58193B482CD2 /* BlueFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueFish.framework; path = BlueFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20315098608C09E26011D18E941F3 /* Pods-BlueFish_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Tests-resources.sh"; sourceTree = "<group>"; };
 		B0C28FC14878E866C218592AAF0AF717 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+Peripherals.h"; sourceTree = "<group>"; };
+		B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+BlueFish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlueFish.h"; sourceTree = "<group>"; };
 		B5772F69467EABE6CB8F765F4A6A58C2 /* Pods-BlueFish_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Helper.m"; sourceTree = "<group>"; };
+		C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+BlueFish.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+BlueFish.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueFish_Tests-dummy.m"; sourceTree = "<group>"; };
 		CF3FADC00CF0D9DFD95CDBF779E9BFD6 /* Pods-BlueFish_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,12 +189,12 @@
 				62398A81832C0B41C280410D35296613 /* BFCentralManager.m */,
 				6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */,
 				5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */,
-				3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */,
-				C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */,
-				B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */,
-				220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */,
-				47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */,
-				9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */,
+				3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+BlueFish.h */,
+				C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+BlueFish.m */,
+				B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+BlueFish.h */,
+				220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+BlueFish.m */,
+				47FA286B8A4541F8A7A01108A2344BAE /* NSError+BlueFish.h */,
+				9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+BlueFish.m */,
 			);
 			name = Classes;
 			path = Classes;
@@ -272,9 +272,9 @@
 				956460F1D0762649D9781410677E581B /* BFCentralManager.h in Headers */,
 				6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */,
 				E9399180BD8B11240512ABD7892FDEDF /* BlueFish-umbrella.h in Headers */,
-				093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+Helper.h in Headers */,
-				54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+Peripherals.h in Headers */,
-				FEE3C9A933A612F84061C67AFBBE3944 /* NSError+Utilities.h in Headers */,
+				093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+BlueFish.h in Headers */,
+				54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+BlueFish.h in Headers */,
+				FEE3C9A933A612F84061C67AFBBE3944 /* NSError+BlueFish.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,9 +394,9 @@
 				95EBD36A76E726E03BF5294A75C83A29 /* BFCentralManager.m in Sources */,
 				7FCF9E553558F62D377A34F3272C3440 /* BFPeripheral.m in Sources */,
 				5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */,
-				15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+Helper.m in Sources */,
-				5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+Peripherals.m in Sources */,
-				31A112F0024D1B7257AE3602DBB85E5E /* NSError+Utilities.m in Sources */,
+				15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+BlueFish.m in Sources */,
+				5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+BlueFish.m in Sources */,
+				31A112F0024D1B7257AE3602DBB85E5E /* NSError+BlueFish.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

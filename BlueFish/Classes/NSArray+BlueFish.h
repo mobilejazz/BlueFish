@@ -16,10 +16,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSError (Utilities)
+@class CBPeripheral;
 
-+ (NSError *)createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
+@interface NSArray (BlueFish)
 
-+ (NSError *)createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description originalError:(NSString *)originalError;
+- (CBPeripheral *)bf_peripheralWithID:(NSString *)id;
 
 @end

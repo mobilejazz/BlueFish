@@ -14,16 +14,16 @@
 // limitations under the License.
 //
 
-#import "CBPeripheral+Helper.h"
+#import "CBPeripheral+BlueFish.h"
 
-@implementation CBPeripheral (Helper)
+@implementation CBPeripheral (BlueFish)
 
 - (BOOL)isInitializedData
 {
     return self.services != nil;
 }
 
-- (CBCharacteristic *)characteristicWithID:(NSString *)characteristicID
+- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID
 {
     for (CBService *service in self.services)
     {
@@ -38,7 +38,7 @@
     return nil;
 }
 
-- (CBCharacteristic *)characteristicWithID:(NSString *)characteristicID forServiceID:(NSString *)serviceID
+- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID forServiceID:(NSString *)serviceID
 {
     CBService *service = [self bf_serviceWithID:serviceID];
     return [self bf_characteristicWithID:characteristicID inService:service];

@@ -17,7 +17,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface CBPeripheral (Helper)
+@interface CBPeripheral (BlueFish)
 
 /**
  Search for a given characteristic inside the peripheral object
@@ -26,7 +26,7 @@
 
  @return The characteristic, if found, or nil otherwise
  */
-- (CBCharacteristic *)characteristicWithID:(NSString *)characteristicID;
+- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID;
 
 
 /**
@@ -37,6 +37,6 @@
 
  @return The characteristic, if found, or nil otherwise
  */
-- (CBCharacteristic *)characteristicWithID:(NSString *)characteristicID forServiceID:(NSString *)serviceID;
+- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID forServiceID:(NSString *)serviceID;
 
 @end

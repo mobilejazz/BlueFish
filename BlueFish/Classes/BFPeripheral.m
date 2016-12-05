@@ -15,8 +15,8 @@
 //
 
 #import "BFPeripheral.h"
-#import "CBPeripheral+Helper.h"
-#import "NSError+Utilities.h"
+#import "CBPeripheral+BlueFish.h"
+#import "NSError+BlueFish.h"
 #import "BFErrorConstants.h"
 
 @interface BFPeripheral ()
@@ -94,7 +94,7 @@
 
 - (NSData *)getValueForCharacteristic:(NSString *)characteristicID
 {
-    CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:characteristicID];
+    CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:characteristicID];
 
     return characteristic.value;
 }
@@ -134,7 +134,7 @@
 {
     if (_BTPeripheral.state != CBPeripheralStateConnected)
     {
-        completionBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotConnected description:nil]);
+        completionBlock(nil, [NSError bf_createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotConnected description:nil]);
         return;
     }
 
@@ -157,11 +157,11 @@
 {
     [_characteristicReadBlocks setObject:completionBlock forKey:characteristicID];
 
-    CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:characteristicID];
+    CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:characteristicID];
 
     if (!characteristic)
     {
-        completionBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
+        completionBlock(nil, [NSError bf_createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
         return;
     }
 
@@ -180,10 +180,10 @@
 - (void)writeCharacteristic:(NSString *)characteristicID data:(NSData *)data completionBlock:(void (^)(NSError *error))completionBlock
 {
     [_characteristicWriteBlocks setObject:completionBlock forKey:characteristicID];
-    CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:characteristicID];
+    CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:characteristicID];
     if (!characteristic)
     {
-        completionBlock([NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
+        completionBlock([NSError bf_createErrorWithDomain:BFErrorDomain code:BFErrorCodeCharacteristicNotExists description:nil]);
         return;
     }
 
@@ -193,7 +193,7 @@
 - (void)subscribeCharacteristicNotification:(NSString *)characteristicID completionBlock:(void (^)(NSError *error))completionBlock
 {
     [_characteristicNotificationSubscriptionBlocks setObject:completionBlock forKey:characteristicID];
-    CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:characteristicID];
+    CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:characteristicID];
 
     [_BTPeripheral setNotifyValue:YES forCharacteristic:characteristic];
 }
@@ -223,7 +223,7 @@
 {
     if (_tempReadCharacteristicsArray.count != 0)
     {
-        CBCharacteristic *characteristic = [_BTPeripheral characteristicWithID:[_tempReadCharacteristicsArray lastObject]];
+        CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:[_tempReadCharacteristicsArray lastObject]];
         [_BTPeripheral readValueForCharacteristic:characteristic];
     }
     else

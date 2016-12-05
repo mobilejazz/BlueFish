@@ -20,7 +20,7 @@
 #import "BFPeripheral_Private.h"
 
 #import "NSArray+Peripherals.h"
-#import "NSError+Utilities.h"
+#import "NSError+BlueFish.h"
 
 #import "BFErrorConstants.h"
 
@@ -165,7 +165,7 @@
             if (_BFDeviceScanBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFDeviceScanBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotSupported description:nil]);
+                    _BFDeviceScanBlock(nil, [NSError bf_createErrorWithDomain:BFErrorDomain code:BFErrorCodeDeviceNotSupported description:nil]);
                 });
             }
             break;
@@ -173,7 +173,7 @@
             if (_BFDeviceScanBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFDeviceScanBlock(nil, [NSError createErrorWithDomain:BFErrorDomain code:BFErrorCodeBluetoothNotAuthorized description:nil]);
+                    _BFDeviceScanBlock(nil, [NSError bf_createErrorWithDomain:BFErrorDomain code:BFErrorCodeBluetoothNotAuthorized description:nil]);
                 });
             }
             break;
