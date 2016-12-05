@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'MJBluetoothManager_Example' do
-  pod 'MJBluetoothManager', :path => '../'
+target 'BlueFish_Example' do
+  pod 'BlueFish', :path => '../'
 
-  target 'MJBluetoothManager_Tests' do
+  target 'BlueFish_Tests' do
     inherit! :search_paths
 
     

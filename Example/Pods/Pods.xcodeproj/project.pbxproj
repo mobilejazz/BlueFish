@@ -7,145 +7,158 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01A8A59EE64A4E5DF52C55053F0D0F5F /* NSError+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F19F6CC61D652130D6D0FC44D3BBC374 /* NSError+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04A23F5194C6637FABD8EAE473795634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		07920242F9072A1AB9CD571FFCB1F8EB /* MJBTCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2EB156E81DBE3EAFA4209360DEA33A /* MJBTCentralManager.m */; };
-		07D7CE2E22C6BC3A37693A6B32FC0144 /* NSArray+Peripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = 300D7B3C97D10091889FEF27699E3F37 /* NSArray+Peripherals.m */; };
-		1660A2CAF830FB67B789C704B8C64B64 /* MJBTErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D9404CE77891406D72103985A16DCB /* MJBTErrorConstants.m */; };
-		170F760F5F0809C72C25FA5FB2DC9B0B /* Pods-MJBluetoothManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9567B2483480B8939880178EEA58A65 /* Pods-MJBluetoothManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FCE0D950FF1AE153C56EB81FB9B8DD7 /* Pods-MJBluetoothManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195D36E247F67E34050B4AE758CFAAAB /* Pods-MJBluetoothManager_Example-dummy.m */; };
-		5AF92BCB5131CC9A832E2DC8AB773E5B /* MJBTPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4FF26BDE97387CEEB1048ACD3B42C1 /* MJBTPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B1250FDF720409BC41FF95A2FC43EA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6F2F53474C59E2955663EB81DFDFE851 /* MJBTErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDAE93A554554B8D5C4669C20BB96D6 /* MJBTErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71D304D1739E6A82F9A7631E59EBCFFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		75D173D3D0FE54A671BA11002DC5E12F /* CBPeripheral+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2AB57F8AD385C8CC72D0631DF5C2DD /* CBPeripheral+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		938A91632674009734F078236BBDD11B /* MJBluetoothManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF29ED8EF748AD7A33BC6D8D1735E7C5 /* MJBluetoothManager-dummy.m */; };
-		A35E2159DDDD29BB2278E35F5F5FAC20 /* MJBTCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2EA4591D806D199E5D26407A753F31 /* MJBTCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8B748EEDB7936307A1F3FBA12547244 /* NSArray+Peripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = 167BFE7A477B1560D0FFD4078ACC8BED /* NSArray+Peripherals.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4183FF5012B1C900E3700E0FED11AA9 /* Pods-MJBluetoothManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE0C6E8C0614DBC172025DF4270CC5A /* Pods-MJBluetoothManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C38D9040A14D5538FD765325A543C6E3 /* Pods-MJBluetoothManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844FCC72147BABF805B21F68B69EF883 /* Pods-MJBluetoothManager_Tests-dummy.m */; };
-		C50BB42EDAA4065F4B088A7635AD7697 /* CBPeripheral+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6620C80A62913D957FCD7E31F1907D4 /* CBPeripheral+Helper.m */; };
-		C9773B9121C64A778C7680ACCB5B7286 /* MJBluetoothManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A12ECE5739AAC076436EABAAE0335C16 /* MJBluetoothManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBAC9A34CD0D522DE4FC0030FD057AA2 /* MJBTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A3411221B45360EF1E5343299BBA2 /* MJBTPeripheral.m */; };
-		D342C670E4BD85F69EE98AC2F0FA7D7B /* NSError+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 774CD26227CF842A9455089BB16C3928 /* NSError+Utilities.m */; };
-		F118182C125FE7AD099E1A5ECBF41153 /* MJBTPeripheral_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC6D1888CD067A2706A33B1C8033C15 /* MJBTPeripheral_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */; };
+		2A2AE854C51941FFD9BAB99F9F149CAA /* BFBTPeripheral_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EF9B7A4C84A96D270EF7319D05EE613 /* Pods-BlueFish_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFF5FA6EE3C56E6B4E11D3998640675 /* Pods-BlueFish_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A112F0024D1B7257AE3602DBB85E5E /* NSError+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */; };
+		333BCEE04A03621728672582B09F7A02 /* Pods-BlueFish_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */; };
+		54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+Peripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */; };
+		5972221947A4505C71D176AE72A64879 /* BFBTErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */; };
+		5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+Peripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = 220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */; };
+		6498D0E5A675729C07E6304E9E7724A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		69CA470D74E90F583D0B6E6E8098F5EE /* BFBTErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FCF9E553558F62D377A34F3272C3440 /* BFPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */; };
+		956460F1D0762649D9781410677E581B /* BFCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95EBD36A76E726E03BF5294A75C83A29 /* BFCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62398A81832C0B41C280410D35296613 /* BFCentralManager.m */; };
+		9763B273A5404C9954DA9DA7A0038FBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B24031FD5122EDCCFCD9269D4803E313 /* Pods-BlueFish_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D3752269BAFC3C156B8766E39B639C /* Pods-BlueFish_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE049CDD49770C41273C6888A7A59C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C1AC88A38C6A82855B1B3E55B78AD09D /* Pods-BlueFish_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */; };
+		E9399180BD8B11240512ABD7892FDEDF /* BlueFish-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD136ECA292785C30A72C314B9CFB70 /* BlueFish-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE3C9A933A612F84061C67AFBBE3944 /* NSError+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		057838335F169F17B92D6EC6EF8283A8 /* PBXContainerItemProxy */ = {
+		E10CD878A032BAE3974F18BB7F7E4E87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0860B45BA5E531BE08D31058A4C63442;
-			remoteInfo = MJBluetoothManager;
+			remoteGlobalIDString = 50401877185ECC4ADB2077DCBE421E68;
+			remoteInfo = BlueFish;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B1A8FC121219B656E9A5B79F6559B34 /* Pods-MJBluetoothManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MJBluetoothManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0DC6D1888CD067A2706A33B1C8033C15 /* MJBTPeripheral_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MJBTPeripheral_Private.h; sourceTree = "<group>"; };
-		167BFE7A477B1560D0FFD4078ACC8BED /* NSArray+Peripherals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+Peripherals.h"; sourceTree = "<group>"; };
-		195D36E247F67E34050B4AE758CFAAAB /* Pods-MJBluetoothManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MJBluetoothManager_Example-dummy.m"; sourceTree = "<group>"; };
-		1D5069442953596B7167E9C5A09502B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DDAE93A554554B8D5C4669C20BB96D6 /* MJBTErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MJBTErrorConstants.h; sourceTree = "<group>"; };
-		232D1560146D35A6538C5FC70B84FCC3 /* Pods-MJBluetoothManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MJBluetoothManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2E6595C917BA61C9977E04D63EBFB103 /* Pods-MJBluetoothManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MJBluetoothManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		300D7B3C97D10091889FEF27699E3F37 /* NSArray+Peripherals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Peripherals.m"; sourceTree = "<group>"; };
-		34A0F0C0292C38AA1CBFEEA0B8D71956 /* Pods-MJBluetoothManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MJBluetoothManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		37466B7C8084A9760971320A6846E0E0 /* Pods-MJBluetoothManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MJBluetoothManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		38C320F51EFEBCF44EE305C907DA435E /* Pods-MJBluetoothManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MJBluetoothManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		39D6ACFD18C4E565806378F3ED0C7CB5 /* Pods_MJBluetoothManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MJBluetoothManager_Example.framework; path = "Pods-MJBluetoothManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2AB57F8AD385C8CC72D0631DF5C2DD /* CBPeripheral+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Helper.h"; sourceTree = "<group>"; };
-		3BFCF13A3BE6514D5196C82DCE4B3BB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47A925A8692A035701BC70C282FF02B3 /* Pods-MJBluetoothManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MJBluetoothManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5687DAC1075DAE8C2443E6373B917EFA /* Pods-MJBluetoothManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MJBluetoothManager_Example.modulemap"; sourceTree = "<group>"; };
-		5CCB82379062BEF9C10A4A4972E666C2 /* Pods-MJBluetoothManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MJBluetoothManager_Example-resources.sh"; sourceTree = "<group>"; };
-		6D2EA4591D806D199E5D26407A753F31 /* MJBTCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MJBTCentralManager.h; sourceTree = "<group>"; };
-		7108D74BC19DC80D187B36E5AC366249 /* MJBluetoothManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJBluetoothManager.framework; path = MJBluetoothManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		774CD26227CF842A9455089BB16C3928 /* NSError+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+Utilities.m"; sourceTree = "<group>"; };
-		7D5A3411221B45360EF1E5343299BBA2 /* MJBTPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MJBTPeripheral.m; sourceTree = "<group>"; };
-		844FCC72147BABF805B21F68B69EF883 /* Pods-MJBluetoothManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MJBluetoothManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		88B23FCDFF94154471BE127E894DEF70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AE0C6E8C0614DBC172025DF4270CC5A /* Pods-MJBluetoothManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MJBluetoothManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		906F038949EF6E3859C33012E7FA3C97 /* Pods-MJBluetoothManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MJBluetoothManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		027E3B8DDC87B7D5F9767DA8C99BECF8 /* Pods-BlueFish_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueFish_Example.modulemap"; sourceTree = "<group>"; };
+		04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFBTPeripheral_Private.h; sourceTree = "<group>"; };
+		0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFBTErrorConstants.h; sourceTree = "<group>"; };
+		0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueFish-dummy.m"; sourceTree = "<group>"; };
+		14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFCentralManager.h; sourceTree = "<group>"; };
+		1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueFish.xcconfig; sourceTree = "<group>"; };
+		220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Peripherals.m"; sourceTree = "<group>"; };
+		2745641DBF85B5F01A1DBBF75355076B /* Pods_BlueFish_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueFish_Example.framework; path = "Pods-BlueFish_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2526146DCCBFD4A39F5943D0EAD775 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3818EB17AD795B17D0A471D169223108 /* Pods-BlueFish_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueFish_Tests.modulemap"; sourceTree = "<group>"; };
+		3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Helper.h"; sourceTree = "<group>"; };
+		47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+Utilities.h"; sourceTree = "<group>"; };
+		49B314C0A28F65CAB00DEC7E727BA46C /* BlueFish-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueFish-prefix.pch"; sourceTree = "<group>"; };
+		49EC70013676852C165345AA23074A3F /* Pods-BlueFish_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueFish_Example-dummy.m"; sourceTree = "<group>"; };
+		505A1AD139E17F434EFACBE506FD2C4F /* Pods-BlueFish_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Example-resources.sh"; sourceTree = "<group>"; };
+		50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFBTErrorConstants.m; sourceTree = "<group>"; };
+		5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFPeripheral.m; sourceTree = "<group>"; };
+		62398A81832C0B41C280410D35296613 /* BFCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BFCentralManager.m; sourceTree = "<group>"; };
+		6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BFPeripheral.h; sourceTree = "<group>"; };
+		768A9B481C55420D219A871015A9B0EE /* Pods-BlueFish_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7B37D2F9D65F43B9439D1BA027937EC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFF5FA6EE3C56E6B4E11D3998640675 /* Pods-BlueFish_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueFish_Example-umbrella.h"; sourceTree = "<group>"; };
+		8751CF30391EF8A7D8D89A0901C455B3 /* Pods_BlueFish_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueFish_Tests.framework; path = "Pods-BlueFish_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4408D11BD3533E3AF46B4E414044AC /* Pods-BlueFish_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueFish_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		903CC3EA0EED45A0BF852F82F75C5D01 /* Pods-BlueFish_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueFish_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96C74660DD9E26D1A457D33018C346E7 /* Pods-MJBluetoothManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MJBluetoothManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9E4FF26BDE97387CEEB1048ACD3B42C1 /* MJBTPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MJBTPeripheral.h; sourceTree = "<group>"; };
-		A12ECE5739AAC076436EABAAE0335C16 /* MJBluetoothManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJBluetoothManager-umbrella.h"; sourceTree = "<group>"; };
-		AA8091A556DB0A03FED98BF1741E40CA /* Pods-MJBluetoothManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MJBluetoothManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AAAB7E78DE938A6E77C5FA4DB2C68803 /* MJBluetoothManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MJBluetoothManager.modulemap; sourceTree = "<group>"; };
-		B124920A874618DAAA9605BEC8D24EA7 /* MJBluetoothManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJBluetoothManager-prefix.pch"; sourceTree = "<group>"; };
-		B8D9404CE77891406D72103985A16DCB /* MJBTErrorConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MJBTErrorConstants.m; sourceTree = "<group>"; };
-		C6620C80A62913D957FCD7E31F1907D4 /* CBPeripheral+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Helper.m"; sourceTree = "<group>"; };
-		C86E266A614E30FE07E354B68FCE7667 /* Pods_MJBluetoothManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MJBluetoothManager_Tests.framework; path = "Pods-MJBluetoothManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		950B6AA6223F030576573C51577FA692 /* Pods-BlueFish_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueFish_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+Utilities.m"; sourceTree = "<group>"; };
+		AA170EEFE73AC32FA87C58193B482CD2 /* BlueFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueFish.framework; path = BlueFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF20315098608C09E26011D18E941F3 /* Pods-BlueFish_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Tests-resources.sh"; sourceTree = "<group>"; };
+		B0C28FC14878E866C218592AAF0AF717 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+Peripherals.h"; sourceTree = "<group>"; };
+		B5772F69467EABE6CB8F765F4A6A58C2 /* Pods-BlueFish_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueFish_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Helper.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CE35DED3E3C1DABF38B4996CD0A60052 /* Pods-MJBluetoothManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MJBluetoothManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D9567B2483480B8939880178EEA58A65 /* Pods-MJBluetoothManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MJBluetoothManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DF2EB156E81DBE3EAFA4209360DEA33A /* MJBTCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MJBTCentralManager.m; sourceTree = "<group>"; };
-		EF29ED8EF748AD7A33BC6D8D1735E7C5 /* MJBluetoothManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJBluetoothManager-dummy.m"; sourceTree = "<group>"; };
-		F19F6CC61D652130D6D0FC44D3BBC374 /* NSError+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+Utilities.h"; sourceTree = "<group>"; };
-		F87A0DC2725E9F78C47E1719ACB8AFAE /* MJBluetoothManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJBluetoothManager.xcconfig; sourceTree = "<group>"; };
-		FB60A5EE42C9C0C217074E4DDD8AEF7C /* Pods-MJBluetoothManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MJBluetoothManager_Tests.modulemap"; sourceTree = "<group>"; };
+		CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueFish_Tests-dummy.m"; sourceTree = "<group>"; };
+		CF3FADC00CF0D9DFD95CDBF779E9BFD6 /* Pods-BlueFish_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4D3752269BAFC3C156B8766E39B639C /* Pods-BlueFish_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueFish_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DCD136ECA292785C30A72C314B9CFB70 /* BlueFish-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueFish-umbrella.h"; sourceTree = "<group>"; };
+		E9A2A7C9FC3A173246E4047E8A6B2EE5 /* BlueFish.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BlueFish.modulemap; sourceTree = "<group>"; };
+		EA4F56A0CD61647FA2530FFE34B15BB5 /* Pods-BlueFish_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueFish_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA7987EE7A489BD913D307139AC64847 /* Pods-BlueFish_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F074C04D22D1DE78E76FBDC60DDA9187 /* Pods-BlueFish_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueFish_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		030D700A0C2DB7FBC6DFE8C2AB7C23AF /* Frameworks */ = {
+		308090DD9E577A1F2228890F45E24F9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A23F5194C6637FABD8EAE473795634 /* Foundation.framework in Frameworks */,
+				BFBE049CDD49770C41273C6888A7A59C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA56390D3AE1E9651D04C9C8C1354027 /* Frameworks */ = {
+		8638AEEE5A8BB1F3963A8C73B8286D63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1250FDF720409BC41FF95A2FC43EA2 /* Foundation.framework in Frameworks */,
+				6498D0E5A675729C07E6304E9E7724A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E34CED6579245995B052F75D53A2B025 /* Frameworks */ = {
+		AD733B46DE472E482E70A496BB36F253 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71D304D1739E6A82F9A7631E59EBCFFA /* Foundation.framework in Frameworks */,
+				9763B273A5404C9954DA9DA7A0038FBB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3526890C129C3B1153FA56AFB917AD06 /* MJBluetoothManager */ = {
+		39A52ADD8BB5EAE76F6FFA38EE866D47 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B53994934FB82458406BFFA21CC4470E /* MJBluetoothManager */,
-				40CF299BC8A8836551BFFDE8EF26D94A /* Support Files */,
+				612F25800540E8AAA1EC322F0DBB1EB6 /* Pods-BlueFish_Example */,
+				4BF1C41CC0990486A9119C15BAEFC2D6 /* Pods-BlueFish_Tests */,
 			);
-			name = MJBluetoothManager;
-			path = ../..;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		40CF299BC8A8836551BFFDE8EF26D94A /* Support Files */ = {
+		4BF1C41CC0990486A9119C15BAEFC2D6 /* Pods-BlueFish_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1D5069442953596B7167E9C5A09502B7 /* Info.plist */,
-				AAAB7E78DE938A6E77C5FA4DB2C68803 /* MJBluetoothManager.modulemap */,
-				F87A0DC2725E9F78C47E1719ACB8AFAE /* MJBluetoothManager.xcconfig */,
-				EF29ED8EF748AD7A33BC6D8D1735E7C5 /* MJBluetoothManager-dummy.m */,
-				B124920A874618DAAA9605BEC8D24EA7 /* MJBluetoothManager-prefix.pch */,
-				A12ECE5739AAC076436EABAAE0335C16 /* MJBluetoothManager-umbrella.h */,
+				7B37D2F9D65F43B9439D1BA027937EC4 /* Info.plist */,
+				3818EB17AD795B17D0A471D169223108 /* Pods-BlueFish_Tests.modulemap */,
+				950B6AA6223F030576573C51577FA692 /* Pods-BlueFish_Tests-acknowledgements.markdown */,
+				903CC3EA0EED45A0BF852F82F75C5D01 /* Pods-BlueFish_Tests-acknowledgements.plist */,
+				CCF76C1AA792AD89938EC3F1C693F026 /* Pods-BlueFish_Tests-dummy.m */,
+				B5772F69467EABE6CB8F765F4A6A58C2 /* Pods-BlueFish_Tests-frameworks.sh */,
+				AEF20315098608C09E26011D18E941F3 /* Pods-BlueFish_Tests-resources.sh */,
+				D4D3752269BAFC3C156B8766E39B639C /* Pods-BlueFish_Tests-umbrella.h */,
+				CF3FADC00CF0D9DFD95CDBF779E9BFD6 /* Pods-BlueFish_Tests.debug.xcconfig */,
+				EA7987EE7A489BD913D307139AC64847 /* Pods-BlueFish_Tests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MJBluetoothManager";
+			name = "Pods-BlueFish_Tests";
+			path = "Target Support Files/Pods-BlueFish_Tests";
 			sourceTree = "<group>";
 		};
-		5E32145CB6E51C62993D28DE2469296B /* Development Pods */ = {
+		612F25800540E8AAA1EC322F0DBB1EB6 /* Pods-BlueFish_Example */ = {
 			isa = PBXGroup;
 			children = (
-				3526890C129C3B1153FA56AFB917AD06 /* MJBluetoothManager */,
+				B0C28FC14878E866C218592AAF0AF717 /* Info.plist */,
+				027E3B8DDC87B7D5F9767DA8C99BECF8 /* Pods-BlueFish_Example.modulemap */,
+				EA4F56A0CD61647FA2530FFE34B15BB5 /* Pods-BlueFish_Example-acknowledgements.markdown */,
+				8F4408D11BD3533E3AF46B4E414044AC /* Pods-BlueFish_Example-acknowledgements.plist */,
+				4FDE777101FCADF3AF2EF536B3B58F79 /* Pods-BlueFish_Example-dummy.m */,
+				768A9B481C55420D219A871015A9B0EE /* Pods-BlueFish_Example-frameworks.sh */,
+				505A1AD139E17F434EFACBE506FD2C4F /* Pods-BlueFish_Example-resources.sh */,
+				7EFF5FA6EE3C56E6B4E11D3998640675 /* Pods-BlueFish_Example-umbrella.h */,
+				F074C04D22D1DE78E76FBDC60DDA9187 /* Pods-BlueFish_Example.debug.xcconfig */,
+				49EC70013676852C165345AA23074A3F /* Pods-BlueFish_Example.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-BlueFish_Example";
+			path = "Target Support Files/Pods-BlueFish_Example";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -156,42 +169,87 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		75942C6AE653771353DA32D01706EB00 /* BlueFish */ = {
+			isa = PBXGroup;
+			children = (
+				8631FBF467DCF21E8C49CF7B7E8C3625 /* BlueFish */,
+				B2D962C6D8785ACA6551B289E096C3BB /* Support Files */,
+			);
+			name = BlueFish;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7842BFB5707A71B433BBF33C281B1495 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C3694074BAC33DCC8736AFA97C776EE /* BFBTErrorConstants.h */,
+				50FF377461EA2229C9E1DEE73A8C8BF6 /* BFBTErrorConstants.m */,
+				04C3E86C8B5C4F761BEA7DA9DC8D831F /* BFBTPeripheral_Private.h */,
+				14285AFF1FAFFB6DCE031B820414F95A /* BFCentralManager.h */,
+				62398A81832C0B41C280410D35296613 /* BFCentralManager.m */,
+				6F8E61CA1AFE2E7214B934056B2AD35A /* BFPeripheral.h */,
+				5E521D8111CF575ECB65DE59F261B63B /* BFPeripheral.m */,
+				3BE00F465F6B17FB76C4A59B16621AE4 /* CBPeripheral+Helper.h */,
+				C3B5E930FD937DF2B864C3F0C247E10B /* CBPeripheral+Helper.m */,
+				B2BE2A0ECE787B6E225797F901EBEE35 /* NSArray+Peripherals.h */,
+				220842205A9F090F1FE72ADAE90A6DB6 /* NSArray+Peripherals.m */,
+				47FA286B8A4541F8A7A01108A2344BAE /* NSError+Utilities.h */,
+				9A7F8E6418CEC3E2F9D49729738ED01E /* NSError+Utilities.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5E32145CB6E51C62993D28DE2469296B /* Development Pods */,
+				AB7F5A730F1406D3E67CD88572724198 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DC827D8892553EE3BF16B5A79904F075 /* Products */,
-				C1A419B29174DA2B46442D50E755ED19 /* Targets Support Files */,
+				A1B723F623EDEA8F28CD35E84423DDC8 /* Products */,
+				39A52ADD8BB5EAE76F6FFA38EE866D47 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A3DBB52FE4D7DFC7566B070997B5F546 /* Pods-MJBluetoothManager_Example */ = {
+		8631FBF467DCF21E8C49CF7B7E8C3625 /* BlueFish */ = {
 			isa = PBXGroup;
 			children = (
-				88B23FCDFF94154471BE127E894DEF70 /* Info.plist */,
-				5687DAC1075DAE8C2443E6373B917EFA /* Pods-MJBluetoothManager_Example.modulemap */,
-				0B1A8FC121219B656E9A5B79F6559B34 /* Pods-MJBluetoothManager_Example-acknowledgements.markdown */,
-				CE35DED3E3C1DABF38B4996CD0A60052 /* Pods-MJBluetoothManager_Example-acknowledgements.plist */,
-				195D36E247F67E34050B4AE758CFAAAB /* Pods-MJBluetoothManager_Example-dummy.m */,
-				232D1560146D35A6538C5FC70B84FCC3 /* Pods-MJBluetoothManager_Example-frameworks.sh */,
-				5CCB82379062BEF9C10A4A4972E666C2 /* Pods-MJBluetoothManager_Example-resources.sh */,
-				8AE0C6E8C0614DBC172025DF4270CC5A /* Pods-MJBluetoothManager_Example-umbrella.h */,
-				AA8091A556DB0A03FED98BF1741E40CA /* Pods-MJBluetoothManager_Example.debug.xcconfig */,
-				34A0F0C0292C38AA1CBFEEA0B8D71956 /* Pods-MJBluetoothManager_Example.release.xcconfig */,
+				7842BFB5707A71B433BBF33C281B1495 /* Classes */,
 			);
-			name = "Pods-MJBluetoothManager_Example";
-			path = "Target Support Files/Pods-MJBluetoothManager_Example";
+			name = BlueFish;
+			path = BlueFish;
 			sourceTree = "<group>";
 		};
-		B53994934FB82458406BFFA21CC4470E /* MJBluetoothManager */ = {
+		A1B723F623EDEA8F28CD35E84423DDC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F40BBE9C48794C87F4A20BD4B14EC3F4 /* Classes */,
+				AA170EEFE73AC32FA87C58193B482CD2 /* BlueFish.framework */,
+				2745641DBF85B5F01A1DBBF75355076B /* Pods_BlueFish_Example.framework */,
+				8751CF30391EF8A7D8D89A0901C455B3 /* Pods_BlueFish_Tests.framework */,
 			);
-			name = MJBluetoothManager;
-			path = MJBluetoothManager;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7F5A730F1406D3E67CD88572724198 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75942C6AE653771353DA32D01706EB00 /* BlueFish */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B2D962C6D8785ACA6551B289E096C3BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9A2A7C9FC3A173246E4047E8A6B2EE5 /* BlueFish.modulemap */,
+				1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */,
+				0ECC7028E67BC5D45BB140F9F9AF2A2B /* BlueFish-dummy.m */,
+				49B314C0A28F65CAB00DEC7E727BA46C /* BlueFish-prefix.pch */,
+				DCD136ECA292785C30A72C314B9CFB70 /* BlueFish-umbrella.h */,
+				2B2526146DCCBFD4A39F5943D0EAD775 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BlueFish";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -202,160 +260,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1A419B29174DA2B46442D50E755ED19 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A3DBB52FE4D7DFC7566B070997B5F546 /* Pods-MJBluetoothManager_Example */,
-				F5966DB7502D8C1800B3A58A0654E861 /* Pods-MJBluetoothManager_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DC827D8892553EE3BF16B5A79904F075 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7108D74BC19DC80D187B36E5AC366249 /* MJBluetoothManager.framework */,
-				39D6ACFD18C4E565806378F3ED0C7CB5 /* Pods_MJBluetoothManager_Example.framework */,
-				C86E266A614E30FE07E354B68FCE7667 /* Pods_MJBluetoothManager_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F40BBE9C48794C87F4A20BD4B14EC3F4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6D2EA4591D806D199E5D26407A753F31 /* MJBTCentralManager.h */,
-				DF2EB156E81DBE3EAFA4209360DEA33A /* MJBTCentralManager.m */,
-				1DDAE93A554554B8D5C4669C20BB96D6 /* MJBTErrorConstants.h */,
-				B8D9404CE77891406D72103985A16DCB /* MJBTErrorConstants.m */,
-				9E4FF26BDE97387CEEB1048ACD3B42C1 /* MJBTPeripheral.h */,
-				7D5A3411221B45360EF1E5343299BBA2 /* MJBTPeripheral.m */,
-				0DC6D1888CD067A2706A33B1C8033C15 /* MJBTPeripheral_Private.h */,
-				FBBA7736CEEAEB76AAC0CFBA1FB2D7ED /* Utilities */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F5966DB7502D8C1800B3A58A0654E861 /* Pods-MJBluetoothManager_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3BFCF13A3BE6514D5196C82DCE4B3BB8 /* Info.plist */,
-				FB60A5EE42C9C0C217074E4DDD8AEF7C /* Pods-MJBluetoothManager_Tests.modulemap */,
-				96C74660DD9E26D1A457D33018C346E7 /* Pods-MJBluetoothManager_Tests-acknowledgements.markdown */,
-				47A925A8692A035701BC70C282FF02B3 /* Pods-MJBluetoothManager_Tests-acknowledgements.plist */,
-				844FCC72147BABF805B21F68B69EF883 /* Pods-MJBluetoothManager_Tests-dummy.m */,
-				38C320F51EFEBCF44EE305C907DA435E /* Pods-MJBluetoothManager_Tests-frameworks.sh */,
-				906F038949EF6E3859C33012E7FA3C97 /* Pods-MJBluetoothManager_Tests-resources.sh */,
-				D9567B2483480B8939880178EEA58A65 /* Pods-MJBluetoothManager_Tests-umbrella.h */,
-				2E6595C917BA61C9977E04D63EBFB103 /* Pods-MJBluetoothManager_Tests.debug.xcconfig */,
-				37466B7C8084A9760971320A6846E0E0 /* Pods-MJBluetoothManager_Tests.release.xcconfig */,
-			);
-			name = "Pods-MJBluetoothManager_Tests";
-			path = "Target Support Files/Pods-MJBluetoothManager_Tests";
-			sourceTree = "<group>";
-		};
-		FBBA7736CEEAEB76AAC0CFBA1FB2D7ED /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				3A2AB57F8AD385C8CC72D0631DF5C2DD /* CBPeripheral+Helper.h */,
-				C6620C80A62913D957FCD7E31F1907D4 /* CBPeripheral+Helper.m */,
-				167BFE7A477B1560D0FFD4078ACC8BED /* NSArray+Peripherals.h */,
-				300D7B3C97D10091889FEF27699E3F37 /* NSArray+Peripherals.m */,
-				F19F6CC61D652130D6D0FC44D3BBC374 /* NSError+Utilities.h */,
-				774CD26227CF842A9455089BB16C3928 /* NSError+Utilities.m */,
-			);
-			name = Utilities;
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46CC27151724D5028211A7F75FFFB42D /* Headers */ = {
+		4B1F7DC49FABA3A5598315AD7D0E9D33 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4183FF5012B1C900E3700E0FED11AA9 /* Pods-MJBluetoothManager_Example-umbrella.h in Headers */,
+				69CA470D74E90F583D0B6E6E8098F5EE /* BFBTErrorConstants.h in Headers */,
+				2A2AE854C51941FFD9BAB99F9F149CAA /* BFBTPeripheral_Private.h in Headers */,
+				956460F1D0762649D9781410677E581B /* BFCentralManager.h in Headers */,
+				6ABE17C56FEC6C404390907AB8AD2DE7 /* BFPeripheral.h in Headers */,
+				E9399180BD8B11240512ABD7892FDEDF /* BlueFish-umbrella.h in Headers */,
+				093A27A3A78B262F085DF8924067BC92 /* CBPeripheral+Helper.h in Headers */,
+				54C79358B13C02A2C519D102A2E5BCC1 /* NSArray+Peripherals.h in Headers */,
+				FEE3C9A933A612F84061C67AFBBE3944 /* NSError+Utilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68549D422619ED9091DC695DDDFDDC5C /* Headers */ = {
+		C714D3957FB4CA3EC0E5B2C80FA554CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170F760F5F0809C72C25FA5FB2DC9B0B /* Pods-MJBluetoothManager_Tests-umbrella.h in Headers */,
+				B24031FD5122EDCCFCD9269D4803E313 /* Pods-BlueFish_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4AB4D64D6EB9FC5ED08B2D238D9727F /* Headers */ = {
+		FE124B3574AD98743B9E35B6D3E6DE06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D173D3D0FE54A671BA11002DC5E12F /* CBPeripheral+Helper.h in Headers */,
-				C9773B9121C64A778C7680ACCB5B7286 /* MJBluetoothManager-umbrella.h in Headers */,
-				A35E2159DDDD29BB2278E35F5F5FAC20 /* MJBTCentralManager.h in Headers */,
-				6F2F53474C59E2955663EB81DFDFE851 /* MJBTErrorConstants.h in Headers */,
-				5AF92BCB5131CC9A832E2DC8AB773E5B /* MJBTPeripheral.h in Headers */,
-				F118182C125FE7AD099E1A5ECBF41153 /* MJBTPeripheral_Private.h in Headers */,
-				A8B748EEDB7936307A1F3FBA12547244 /* NSArray+Peripherals.h in Headers */,
-				01A8A59EE64A4E5DF52C55053F0D0F5F /* NSError+Utilities.h in Headers */,
+				2EF9B7A4C84A96D270EF7319D05EE613 /* Pods-BlueFish_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0860B45BA5E531BE08D31058A4C63442 /* MJBluetoothManager */ = {
+		3F0E5DAB1044D7C62EF3D4DA2EE6A7BA /* Pods-BlueFish_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3181B32FFFE3738155273A0FEA0DF566 /* Build configuration list for PBXNativeTarget "MJBluetoothManager" */;
+			buildConfigurationList = E6CD0A5596816BFC4F6D618285A04D86 /* Build configuration list for PBXNativeTarget "Pods-BlueFish_Tests" */;
 			buildPhases = (
-				C336E950AF2C9E6EF60754331ABC1AB5 /* Sources */,
-				030D700A0C2DB7FBC6DFE8C2AB7C23AF /* Frameworks */,
-				D4AB4D64D6EB9FC5ED08B2D238D9727F /* Headers */,
+				EDF00C7DCFE394FCA1ED33F68A48E912 /* Sources */,
+				8638AEEE5A8BB1F3963A8C73B8286D63 /* Frameworks */,
+				C714D3957FB4CA3EC0E5B2C80FA554CC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MJBluetoothManager;
-			productName = MJBluetoothManager;
-			productReference = 7108D74BC19DC80D187B36E5AC366249 /* MJBluetoothManager.framework */;
+			name = "Pods-BlueFish_Tests";
+			productName = "Pods-BlueFish_Tests";
+			productReference = 8751CF30391EF8A7D8D89A0901C455B3 /* Pods_BlueFish_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1198827646E5A28887DFBA49CA4729CD /* Pods-MJBluetoothManager_Tests */ = {
+		50401877185ECC4ADB2077DCBE421E68 /* BlueFish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09435571CDDEF262ECEFC64F169D7A0E /* Build configuration list for PBXNativeTarget "Pods-MJBluetoothManager_Tests" */;
+			buildConfigurationList = 0754F052E9C743533E4F6938925BD70C /* Build configuration list for PBXNativeTarget "BlueFish" */;
 			buildPhases = (
-				2B65447F5AB828EE45FFA155562663CB /* Sources */,
-				DA56390D3AE1E9651D04C9C8C1354027 /* Frameworks */,
-				68549D422619ED9091DC695DDDFDDC5C /* Headers */,
+				B43A22A0DFB5EB597D9C943703E68911 /* Sources */,
+				AD733B46DE472E482E70A496BB36F253 /* Frameworks */,
+				4B1F7DC49FABA3A5598315AD7D0E9D33 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-MJBluetoothManager_Tests";
-			productName = "Pods-MJBluetoothManager_Tests";
-			productReference = C86E266A614E30FE07E354B68FCE7667 /* Pods_MJBluetoothManager_Tests.framework */;
+			name = BlueFish;
+			productName = BlueFish;
+			productReference = AA170EEFE73AC32FA87C58193B482CD2 /* BlueFish.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		34C80BE71DEAE944C3E85801B475741F /* Pods-MJBluetoothManager_Example */ = {
+		81AACF35EB13CCB23A3D1F8A6560BD60 /* Pods-BlueFish_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6C50A8E49A6BF89A60B0D478A6536CE /* Build configuration list for PBXNativeTarget "Pods-MJBluetoothManager_Example" */;
+			buildConfigurationList = FEAA36F76E7CC4E296145012A0ADB154 /* Build configuration list for PBXNativeTarget "Pods-BlueFish_Example" */;
 			buildPhases = (
-				FD485EE006BF5B9A5CDC5376FBF57F4D /* Sources */,
-				E34CED6579245995B052F75D53A2B025 /* Frameworks */,
-				46CC27151724D5028211A7F75FFFB42D /* Headers */,
+				737F0B93A13FBBBACC1A80D6D502F054 /* Sources */,
+				308090DD9E577A1F2228890F45E24F9F /* Frameworks */,
+				FE124B3574AD98743B9E35B6D3E6DE06 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A9F4B2E9E617D117738F1941EA3F2FA5 /* PBXTargetDependency */,
+				AF83CFBBD08BD7612B68815439F541B0 /* PBXTargetDependency */,
 			);
-			name = "Pods-MJBluetoothManager_Example";
-			productName = "Pods-MJBluetoothManager_Example";
-			productReference = 39D6ACFD18C4E565806378F3ED0C7CB5 /* Pods_MJBluetoothManager_Example.framework */;
+			name = "Pods-BlueFish_Example";
+			productName = "Pods-BlueFish_Example";
+			productReference = 2745641DBF85B5F01A1DBBF75355076B /* Pods_BlueFish_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -375,63 +366,63 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DC827D8892553EE3BF16B5A79904F075 /* Products */;
+			productRefGroup = A1B723F623EDEA8F28CD35E84423DDC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0860B45BA5E531BE08D31058A4C63442 /* MJBluetoothManager */,
-				34C80BE71DEAE944C3E85801B475741F /* Pods-MJBluetoothManager_Example */,
-				1198827646E5A28887DFBA49CA4729CD /* Pods-MJBluetoothManager_Tests */,
+				50401877185ECC4ADB2077DCBE421E68 /* BlueFish */,
+				81AACF35EB13CCB23A3D1F8A6560BD60 /* Pods-BlueFish_Example */,
+				3F0E5DAB1044D7C62EF3D4DA2EE6A7BA /* Pods-BlueFish_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B65447F5AB828EE45FFA155562663CB /* Sources */ = {
+		737F0B93A13FBBBACC1A80D6D502F054 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38D9040A14D5538FD765325A543C6E3 /* Pods-MJBluetoothManager_Tests-dummy.m in Sources */,
+				C1AC88A38C6A82855B1B3E55B78AD09D /* Pods-BlueFish_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C336E950AF2C9E6EF60754331ABC1AB5 /* Sources */ = {
+		B43A22A0DFB5EB597D9C943703E68911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50BB42EDAA4065F4B088A7635AD7697 /* CBPeripheral+Helper.m in Sources */,
-				938A91632674009734F078236BBDD11B /* MJBluetoothManager-dummy.m in Sources */,
-				07920242F9072A1AB9CD571FFCB1F8EB /* MJBTCentralManager.m in Sources */,
-				1660A2CAF830FB67B789C704B8C64B64 /* MJBTErrorConstants.m in Sources */,
-				CBAC9A34CD0D522DE4FC0030FD057AA2 /* MJBTPeripheral.m in Sources */,
-				07D7CE2E22C6BC3A37693A6B32FC0144 /* NSArray+Peripherals.m in Sources */,
-				D342C670E4BD85F69EE98AC2F0FA7D7B /* NSError+Utilities.m in Sources */,
+				5972221947A4505C71D176AE72A64879 /* BFBTErrorConstants.m in Sources */,
+				95EBD36A76E726E03BF5294A75C83A29 /* BFCentralManager.m in Sources */,
+				7FCF9E553558F62D377A34F3272C3440 /* BFPeripheral.m in Sources */,
+				5883D450CBE620D30D34F8958035D8A3 /* BlueFish-dummy.m in Sources */,
+				15DEB4EC43ADC3E0216ACB39054B4E9E /* CBPeripheral+Helper.m in Sources */,
+				5F94CCEB0EE49C47224A26B28998BDD8 /* NSArray+Peripherals.m in Sources */,
+				31A112F0024D1B7257AE3602DBB85E5E /* NSError+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD485EE006BF5B9A5CDC5376FBF57F4D /* Sources */ = {
+		EDF00C7DCFE394FCA1ED33F68A48E912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCE0D950FF1AE153C56EB81FB9B8DD7 /* Pods-MJBluetoothManager_Example-dummy.m in Sources */,
+				333BCEE04A03621728672582B09F7A02 /* Pods-BlueFish_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A9F4B2E9E617D117738F1941EA3F2FA5 /* PBXTargetDependency */ = {
+		AF83CFBBD08BD7612B68815439F541B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJBluetoothManager;
-			target = 0860B45BA5E531BE08D31058A4C63442 /* MJBluetoothManager */;
-			targetProxy = 057838335F169F17B92D6EC6EF8283A8 /* PBXContainerItemProxy */;
+			name = BlueFish;
+			target = 50401877185ECC4ADB2077DCBE421E68 /* BlueFish */;
+			targetProxy = E10CD878A032BAE3974F18BB7F7E4E87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		884775DCF54C99350EAC1373F213BB3C /* Debug */ = {
+		087D615639E5BABA5906F196AC0F3A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F87A0DC2725E9F78C47E1719ACB8AFAE /* MJBluetoothManager.xcconfig */;
+			baseConfigurationReference = 1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -444,14 +435,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MJBluetoothManager/MJBluetoothManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MJBluetoothManager/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueFish/BlueFish-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueFish/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MJBluetoothManager/MJBluetoothManager.modulemap";
+				MODULEMAP_FILE = "Target Support Files/BlueFish/BlueFish.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MJBluetoothManager;
+				PRODUCT_NAME = BlueFish;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +450,107 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		66A91376D63CB8A68C1F7510514E7417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7987EE7A489BD913D307139AC64847 /* Pods-BlueFish_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueFish_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueFish_Tests/Pods-BlueFish_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueFish_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E1F86247357803074845759772F1B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F074C04D22D1DE78E76FBDC60DDA9187 /* Pods-BlueFish_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueFish_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueFish_Example/Pods-BlueFish_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueFish_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73E82B13F04ABF7D922E37A967946BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8C7725A0C92424E96F73BC179E2985 /* BlueFish.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BlueFish/BlueFish-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueFish/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlueFish/BlueFish.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BlueFish;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -500,40 +592,40 @@
 			};
 			name = Release;
 		};
-		91C2E4D2D1B144934AFC9CB7ED9386D4 /* Release */ = {
+		94E46D40A37A9900A301ADD20FB15E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37466B7C8084A9760971320A6846E0E0 /* Pods-MJBluetoothManager_Tests.release.xcconfig */;
+			baseConfigurationReference = CF3FADC00CF0D9DFD95CDBF779E9BFD6 /* Pods-BlueFish_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MJBluetoothManager_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueFish_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MJBluetoothManager_Tests/Pods-MJBluetoothManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueFish_Tests/Pods-BlueFish_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MJBluetoothManager_Tests;
+				PRODUCT_NAME = Pods_BlueFish_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -579,44 +671,9 @@
 			};
 			name = Debug;
 		};
-		DC46035D33B9470E44F840727BAE88BC /* Debug */ = {
+		A61DEF967C9E60652A5302D7A720BF14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6595C917BA61C9977E04D63EBFB103 /* Pods-MJBluetoothManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MJBluetoothManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MJBluetoothManager_Tests/Pods-MJBluetoothManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MJBluetoothManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EDE66B5D24A6138EBAA379FFA83D2BDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34A0F0C0292C38AA1CBFEEA0B8D71956 /* Pods-MJBluetoothManager_Example.release.xcconfig */;
+			baseConfigurationReference = 49EC70013676852C165345AA23074A3F /* Pods-BlueFish_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -629,84 +686,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MJBluetoothManager_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueFish_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MJBluetoothManager_Example/Pods-MJBluetoothManager_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueFish_Example/Pods-BlueFish_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MJBluetoothManager_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EEA1498CDEEEA8AD06EE784C9C61329E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8091A556DB0A03FED98BF1741E40CA /* Pods-MJBluetoothManager_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MJBluetoothManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MJBluetoothManager_Example/Pods-MJBluetoothManager_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MJBluetoothManager_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F6D77EAA2CDBAF82A3CBD2071100EE2B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F87A0DC2725E9F78C47E1719ACB8AFAE /* MJBluetoothManager.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MJBluetoothManager/MJBluetoothManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MJBluetoothManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MJBluetoothManager/MJBluetoothManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MJBluetoothManager;
+				PRODUCT_NAME = Pods_BlueFish_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -718,11 +709,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09435571CDDEF262ECEFC64F169D7A0E /* Build configuration list for PBXNativeTarget "Pods-MJBluetoothManager_Tests" */ = {
+		0754F052E9C743533E4F6938925BD70C /* Build configuration list for PBXNativeTarget "BlueFish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC46035D33B9470E44F840727BAE88BC /* Debug */,
-				91C2E4D2D1B144934AFC9CB7ED9386D4 /* Release */,
+				087D615639E5BABA5906F196AC0F3A2C /* Debug */,
+				73E82B13F04ABF7D922E37A967946BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -736,20 +727,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3181B32FFFE3738155273A0FEA0DF566 /* Build configuration list for PBXNativeTarget "MJBluetoothManager" */ = {
+		E6CD0A5596816BFC4F6D618285A04D86 /* Build configuration list for PBXNativeTarget "Pods-BlueFish_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				884775DCF54C99350EAC1373F213BB3C /* Debug */,
-				F6D77EAA2CDBAF82A3CBD2071100EE2B /* Release */,
+				94E46D40A37A9900A301ADD20FB15E6C /* Debug */,
+				66A91376D63CB8A68C1F7510514E7417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6C50A8E49A6BF89A60B0D478A6536CE /* Build configuration list for PBXNativeTarget "Pods-MJBluetoothManager_Example" */ = {
+		FEAA36F76E7CC4E296145012A0ADB154 /* Build configuration list for PBXNativeTarget "Pods-BlueFish_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EEA1498CDEEEA8AD06EE784C9C61329E /* Debug */,
-				EDE66B5D24A6138EBAA379FFA83D2BDB /* Release */,
+				6E1F86247357803074845759772F1B84 /* Debug */,
+				A61DEF967C9E60652A5302D7A720BF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

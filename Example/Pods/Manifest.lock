@@ -1,16 +1,16 @@
 PODS:
-  - MJBluetoothManager (0.1.0)
+  - BlueFish (0.1.0)
 
 DEPENDENCIES:
-  - MJBluetoothManager (from `../`)
+  - BlueFish (from `../`)
 
 EXTERNAL SOURCES:
-  MJBluetoothManager:
+  BlueFish:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MJBluetoothManager: 0bdb91d354a95b851e83f4204b68557a570b3fb7
+  BlueFish: 7ca591948e81bfefa429abf11d859ecdaaabd483
 
-PODFILE CHECKSUM: eea8b1aac2e8c53f1dc160382f462e93307c0bd1
+PODFILE CHECKSUM: 03fe047d2b2f534ad0d532a6195c2e7170e7bbf1
 
 COCOAPODS: 1.1.1

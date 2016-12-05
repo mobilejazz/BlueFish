@@ -25,9 +25,9 @@ pod "MJBluetoothManager"
 ```
 
 ## Basic Usage
-The main objects to interact with are **MJBTCentralManager** and **MJBTPeripheral**.
+The main objects to interact with are **BFCentralManager** and **BFPeripheral**.
 
-### MJBTCentralManager
+### BFCentralManager
 
 This object is responsible for:
 
@@ -40,8 +40,8 @@ Example of use:
 ```objective-c
 
     NSString *deviceID = @"hdl83h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
-    MJBTCentralManager *manager = [[MJBTCentralManager alloc] init];
-    MJBTPeripheral *peripheral = [manager retrievePeripheralWithID:deviceID];
+    BFCentralManager *manager = [[BFCentralManager alloc] init];
+    BFPeripheral *peripheral = [manager retrievePeripheralWithID:deviceID];
     if (peripheral)
     {
         //Peripheral found in cache, connect
@@ -52,7 +52,7 @@ Example of use:
     }
     
     //If not in cache, search for it in the nearby area
-    [manager startScanningWithUpdateBlock:^(MJBTPeripheral *peripheral, NSError *error) {
+    [manager startScanningWithUpdateBlock:^(BFPeripheral *peripheral, NSError *error) {
         if ([peripheral.identifier isEqualToString:deviceID])
         {
             //Stop Scan
@@ -66,7 +66,7 @@ Example of use:
     }];
 ``` 
 
-### MJBTPeripheral
+### BFPeripheral
 
 This object represents a peripheral, and is responsible for:
 
@@ -124,7 +124,7 @@ We can subscribe to a peripheral notification on a characteristic value change. 
         //Handle error if needed ....
     }];
     
-#pragma mark - MJBTNotificationDelegate
+#pragma mark - BFBTNotificationDelegate
     
     - (void)didNotifiedValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
     {

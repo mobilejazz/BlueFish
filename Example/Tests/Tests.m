@@ -1,8 +1,8 @@
 //
-//  MJBluetoothManagerTests.m
-//  MJBluetoothManagerTests
+//  BlueFishTests.m
+//  BlueFishTests
 //
-//  Created by Paolo Tagliani on 11/23/2016.
+//  Created by Paolo Tagliani on 12/05/2016.
 //  Copyright (c) 2016 Paolo Tagliani. All rights reserved.
 //
 
