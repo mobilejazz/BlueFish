@@ -18,8 +18,13 @@
 
 @interface NSError (BlueFish)
 
-+ (NSError *)bf_createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
++ (NSError *)bf_createErrorWithDomain:(NSString *)domain
+                                 code:(NSInteger)code
+                          description:(NSString *)description;
 
-+ (NSError *)bf_createErrorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description originalError:(NSString *)originalError;
++ (NSError *)bf_createErrorWithDomain:(NSString *)domain
+                                 code:(NSInteger)code
+                          description:(NSString *)description
+                        originalError:(NSString *)originalError;
 
 @end

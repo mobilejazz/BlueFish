@@ -37,6 +37,7 @@
 
  @return The characteristic, if found, or nil otherwise
  */
-- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID forServiceID:(NSString *)serviceID;
+- (CBCharacteristic *)bf_characteristicWithID:(NSString *)characteristicID
+                                 forServiceID:(NSString *)serviceID;
 
 @end
