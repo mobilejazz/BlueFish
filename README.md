@@ -37,31 +37,31 @@ Example of use:
 
 ```objective-c
 
-    NSString *deviceID = @"hdl83h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
-    BFCentralManager *manager = [[BFCentralManager alloc] init];
-    BFPeripheral *peripheral = [manager retrievePeripheralWithID:deviceID];
-    if (peripheral)
+NSString *deviceID = @"hdl83h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
+BFCentralManager *manager = [[BFCentralManager alloc] init];
+BFPeripheral *peripheral = [manager retrievePeripheralWithID:deviceID];
+if (peripheral)
+{
+    //Peripheral found in cache, connect
+    [manager connectToPeripheral:peripheral completionBlock:^(NSError *error) {
+        //TODO: Manage error or do operation on peripheral
+    }];
+    return;
+}
+
+//If not in cache, search for it in the nearby area
+[manager startScanningWithUpdateBlock:^(BFPeripheral *peripheral, NSError *error) {
+    if ([peripheral.identifier isEqualToString:deviceID])
     {
-        //Peripheral found in cache, connect
+        //Stop Scan
+        [manager stopScanning];
+
+        //Connect to peripheral
         [manager connectToPeripheral:peripheral completionBlock:^(NSError *error) {
             //TODO: Manage error or do operation on peripheral
         }];
-        return;
     }
-
-    //If not in cache, search for it in the nearby area
-    [manager startScanningWithUpdateBlock:^(BFPeripheral *peripheral, NSError *error) {
-        if ([peripheral.identifier isEqualToString:deviceID])
-        {
-            //Stop Scan
-            [manager stopScanning];
-
-            //Connect to peripheral
-            [manager connectToPeripheral:peripheral completionBlock:^(NSError *error) {
-                //TODO: Manage error or do operation on peripheral
-            }];
-        }
-    }];
+}];
 ```
 
 ### BFPeripheral
@@ -79,35 +79,35 @@ After connection, a peripheral does not hold information about characteristics a
 
 ```objective-c
 //Global discovery
-    [peripheral setupPeripheralForUse:^(NSError *error) {
-        NSLog(@"Peripheral services: %@", peripheral.services.description);
+[peripheral setupPeripheralForUse:^(NSError *error) {
+    NSLog(@"Peripheral services: %@", peripheral.services.description);
+    NSLog(@"Peripheral characteristics: %@", peripheral.characteristics.description);
+}];
+
+//Alternative version
+[peripheral listServices:^(NSArray<CBService *> *services, NSError *error) {
+    NSLog(@"Peripheral services: %@", peripheral.services.description);
+
+    [peripheral listCharacteristics:^(NSError *error) {
         NSLog(@"Peripheral characteristics: %@", peripheral.characteristics.description);
     }];
-
-    //Alternative version
-    [peripheral listServices:^(NSArray<CBService *> *services, NSError *error) {
-        NSLog(@"Peripheral services: %@", peripheral.services.description);
-
-        [peripheral listCharacteristics:^(NSError *error) {
-            NSLog(@"Peripheral characteristics: %@", peripheral.characteristics.description);
-        }];
-    }];
+}];
 ```
 #### Read and write characteristics
 
 ```objective-c
 NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
-    NSData *data = [@"Mobile Jazz" dataUsingEncoding:NSUTF8StringEncoding];
+NSData *data = [@"Mobile Jazz" dataUsingEncoding:NSUTF8StringEncoding];
 
-    [peripheral writeCharacteristic:characteristicID data:data completionBlock:^(NSError *error) {
-       //Handle error if needed ....
-    }];
+[peripheral writeCharacteristic:characteristicID data:data completionBlock:^(NSError *error) {
+    //Handle error if needed ....
+}];
 
-    [peripheral readCharacteristic:characteristicID completionBlock:^(NSData *data, NSError *error) {
-       //Handle error if needed ....
-        NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", string); //Mobile Jazz
-    }];
+[peripheral readCharacteristic:characteristicID completionBlock:^(NSData *data, NSError *error) {
+    //Handle error if needed ....
+    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", string); //Mobile Jazz
+}];
 ```
 
 #### Notifications
@@ -115,19 +115,19 @@ NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
 We can subscribe to a peripheral notification on a characteristic value change. When the value changes, the peripheral will notify its notificationDelegate.
 
 ```objective-c
-    NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
-    peripheral.notificationDelegate = self;
+NSString *characteristicID = @"sd2343h6sd-gl95-bn4f-37gd-jd73hd0tn8za";
+peripheral.notificationDelegate = self;
 
-    [peripheral subscribeCharacteristicNotification:characteristicID completionBlock:^(NSError *error) {
-        //Handle error if needed ....
-    }];
+[peripheral subscribeCharacteristicNotification:characteristicID completionBlock:^(NSError *error) {
+    //Handle error if needed ....
+}];
 
 #pragma mark - BFNotificationDelegate
 
-    - (void)didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
-    {
-        NSLog(@"Received: %@ from characteristic:%@", [value description], characteristicID);
-    }
+- (void)didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID
+{
+    NSLog(@"Received: %@ from characteristic:%@", [value description], characteristicID);
+}
 ```
 ## Project Maintainer
 
