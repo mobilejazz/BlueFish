@@ -44,20 +44,33 @@
 
 @implementation BFCentralManager
 
-- (instancetype)init
+- (instancetype)initWithLongTermTag:(NSString *)tag
 {
     self = [super init];
     if (self)
     {
         dispatch_queue_t bluetoothQueue = dispatch_queue_create("com.mobilejazz.bluetooth", DISPATCH_QUEUE_SERIAL);
 
-        _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:bluetoothQueue];
+        if (tag)
+        {
+            NSDictionary *options = @{CBCentralManagerOptionRestoreIdentifierKey: tag};
+            _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:bluetoothQueue options:options];
+        }
+        else
+        {
+            _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:bluetoothQueue];
+        }
 
         _internalPeripheralList = [NSMutableArray array];
         _peripheralList = [[NSMutableDictionary alloc] init];
     }
 
     return self;
+}
+
+- (instancetype)init
+{
+    return [self initWithLongTermTag:nil];
 }
 
 #pragma mark - Public methods
@@ -267,6 +280,11 @@
             });
         }
     }
+}
+
+- (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *,id> *)dict
+{
+    NSLog(@"ToDo: Central manager was restored!");
 }
 
 @end

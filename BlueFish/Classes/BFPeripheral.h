@@ -17,9 +17,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+@class BFPeripheral;
+
 @protocol BFNotificationDelegate <NSObject>
 
-- (void)didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID;
+- (void)peripheral:(BFPeripheral *)peripheral didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID;
 
 @end
 

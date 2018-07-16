@@ -300,10 +300,10 @@
     void (^ characteristicReadBLock)(NSData *data, NSError *readError) = [_characteristicReadBlocks objectForKey:[characteristic.UUID UUIDString]];
     if (!characteristicReadBLock)
     { // It's a notification and need to be updated asynchronously
-        if ([_notificationDelegate respondsToSelector:@selector(didNotifyValue:forCharacteristicID:)])
+        if ([_notificationDelegate respondsToSelector:@selector(peripheral:didNotifyValue:forCharacteristicID:)])
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [_notificationDelegate didNotifyValue:characteristic.value forCharacteristicID:[characteristic.UUID UUIDString]];
+                [_notificationDelegate peripheral:self didNotifyValue:characteristic.value forCharacteristicID:[characteristic.UUID UUIDString]];
             });
         }
     }

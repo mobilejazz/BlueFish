@@ -21,7 +21,7 @@
 
 @protocol BFCentralManagerDelegate <NSObject>
 
-- (void)didDisconnectPeripheral:(BFPeripheral *)peripheral error:(NSError *)error;
+- (void)didDisconnectPeripheral:(BFPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
 - (void)didTurnOffBluetooth;
 
 @end
@@ -36,19 +36,30 @@
 /*
  * The current connected peripheral
  */
-@property (strong, nonatomic, readonly) BFPeripheral *connectedPeripheral;
+@property (strong, nonatomic, readonly, nullable) BFPeripheral * connectedPeripheral;
 
 /**
  *  The delegate which will receive updates on peripheral disconnection
  */
-@property (weak, nonatomic, readwrite) id <BFCentralManagerDelegate> delegate;
+@property (weak, nonatomic, readwrite) id <BFCentralManagerDelegate> _Nullable delegate;
+
+#pragma mark - Initialization
+
+- (instancetype)init;
+
+/**
+ *  When initializing a Central Manager indicating a tag Core Bluetooth will observe
+ *  the subscribed BLE notifications even after the app has been closed.
+ *  See "Performing Long-Term Actions in the Background" in the CB documentation
+ */
+- (instancetype)initWithLongTermTag:(NSString * _Nullable)tag;
 
 #pragma mark - Scan methods
 
 /**
  *  Launch scan of nearby devices.
  */
-- (void)startScanningWithUpdateBlock:(void (^)(BFPeripheral *peripheral, NSError *error))updateBlock;
+- (void)startScanningWithUpdateBlock:(nonnull void (^)(BFPeripheral * _Nullable peripheral, NSError * _Nullable error))updateBlock;
 
 /**
  *  Launch scan for nearby devices that expose the services passed as parameter
@@ -56,7 +67,7 @@
  *  @param services    An array of CBUUID indicating the services to scan for
  *  @param updateBLock A block to be executed each time there's an update in the devices discovery
  */
-- (void)startScanningWithServices:(NSArray <CBUUID *> *)services updateBlock:(void (^)(BFPeripheral *peripheral, NSError *error))updateBlock;
+- (void)startScanningWithServices:(NSArray <CBUUID *> * _Nonnull)services updateBlock:(void (^)(BFPeripheral * _Nullable peripheral, NSError * _Nullable error))updateBlock;
 
 /**
  *  Stop the scan of devices
@@ -71,21 +82,21 @@
  *  @param peripheral      The peripheral to connect to
  *  @param completionBlock The block called on completion with an error, if present, passed as parameter
  */
-- (void)connectToPeripheral:(BFPeripheral *)peripheral completionBlock:(void (^)(NSError *error))completionBlock;
+- (void)connectToPeripheral:(BFPeripheral * _Nonnull)peripheral completionBlock:(nonnull void (^)(NSError * _Nullable error))completionBlock;
 
 /**
  *  Disconnect from a connected peripheral
  *
  *  @param peripheral The peripheral to which disconnect to
  */
-- (void)disconnectPeripheral:(BFPeripheral *)peripheral;
+- (void)disconnectPeripheral:(BFPeripheral * _Nonnull)peripheral;
 
 /**
  *  Cancel all current pending connection with peripheral
  *
  *  @param peripheral The peripheral on which interrupt all connections
  */
-- (void)cancelConnectionToPeripheral:(BFPeripheral *)peripheral;
+- (void)cancelConnectionToPeripheral:(BFPeripheral * _Nonnull)peripheral;
 
 #pragma mark - Device retrieval
 
@@ -95,6 +106,6 @@
  *  @param ID              The ID of the peripheral to search for
  *  @param completionBlock A block to be executed on completion, with the the peripheral if existing or an error.
  */
-- (BFPeripheral *)retrievePeripheralWithID:(NSString *)ID;
+- (BFPeripheral *)retrievePeripheralWithID:(NSString * _Nonnull)ID;
 
 @end
