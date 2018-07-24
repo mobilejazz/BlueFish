@@ -21,6 +21,7 @@
 
 @protocol BFCentralManagerDelegate <NSObject>
 
+- (void)didRestoreSessionWithPeripherals:(NSArray<BFPeripheral *> * _Nullable)peripherals scanningServices:(NSArray<CBUUID *> *_Nullable)scanningServices;
 - (void)didDisconnectPeripheral:(BFPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
 - (void)didTurnOffBluetooth;
 

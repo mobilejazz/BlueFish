@@ -284,7 +284,19 @@
 
 - (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *,id> *)dict
 {
-    NSLog(@"ToDo: Central manager was restored!");
+    NSArray<CBPeripheral *> *cbPeripherals = [dict objectForKey:CBCentralManagerRestoredStatePeripheralsKey];
+    NSArray<CBUUID *> *cbScanningServices = [dict objectForKey:CBCentralManagerRestoredStateScanServicesKey];
+    
+    NSArray *peripherals = [NSArray array];
+    for (CBPeripheral * p in cbPeripherals)
+    {
+        peripherals = [peripherals arrayByAddingObject:[[BFPeripheral alloc] initWithPeripheral:p]];
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(didRestoreSessionWithPeripherals:scanningServices:)])
+    {
+        [self.delegate didRestoreSessionWithPeripherals:peripherals scanningServices:cbScanningServices];
+    }
 }
 
 @end

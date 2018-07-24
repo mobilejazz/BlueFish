@@ -109,4 +109,11 @@
  */
 - (void)subscribeCharacteristicNotification:(NSString *)characteristicID completionBlock:(void (^)(NSError *error))completionBlock;
 
+/**
+ *  Unsubscribe to notification on a given characteristic and removes related completion block 
+ *
+ *  @param characteristicID The characteristic ID
+ */
+- (void)unsubscribeCharacteristicNotification:(NSString *)characteristicID;
+
 @end

@@ -198,6 +198,14 @@
     [_BTPeripheral setNotifyValue:YES forCharacteristic:characteristic];
 }
 
+- (void)unsubscribeCharacteristicNotification:(NSString *)characteristicID
+{
+    CBCharacteristic *characteristic = [_BTPeripheral bf_characteristicWithID:characteristicID];
+
+    [_BTPeripheral setNotifyValue:NO forCharacteristic:characteristic];
+    [_characteristicNotificationSubscriptionBlocks setObject:nil forKey:characteristicID];
+}
+
 #pragma mark - Private methods
 
 - (void)bf_discoverNextCharacteristic
