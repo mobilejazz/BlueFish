@@ -36,6 +36,7 @@
 
 @property (nonatomic, strong, readwrite) NSArray *servicesToScan;
 @property (nonatomic, assign, readwrite) BOOL scanningEnabled;
+@property (nonatomic, assign, readwrite) BOOL waitingToConnect;
 
 @property (nonatomic, copy, readwrite) void (^ BFDeviceScanBlock)(BFPeripheral *peripheral, NSError *error);
 @property (nonatomic, copy, readwrite) void (^ BFPeripheralConnectionBlock)(NSError *error);
@@ -124,16 +125,27 @@
 
 - (void)connectToPeripheral:(BFPeripheral *)peripheral completionBlock:(void (^)(NSError *error))completionBlock
 {
-    if (peripheral.BTPeripheral.state == CBPeripheralStateConnected)
+    if (_centralManager.state == CBManagerStatePoweredOn)
     {
-        completionBlock(nil);
+        if (peripheral.BTPeripheral.state == CBPeripheralStateConnected)
+        {
+            completionBlock(nil);
+            return;
+        }
+        
+        self.connectingPeripheral = peripheral.BTPeripheral;
+        self.BFPeripheralConnectionBlock = completionBlock;
+        
+        [_centralManager connectPeripheral:_connectingPeripheral options:nil];
         return;
     }
-
-    self.connectingPeripheral = peripheral.BTPeripheral;
-    self.BFPeripheralConnectionBlock = completionBlock;
-
-    [_centralManager connectPeripheral:_connectingPeripheral options:nil];
+    else
+    {
+        _waitingToConnect = YES;
+        
+        self.connectingPeripheral = peripheral.BTPeripheral;
+        self.BFPeripheralConnectionBlock = completionBlock;
+    }
 }
 
 - (void)disconnectPeripheral:(BFPeripheral *)peripheral
@@ -204,6 +216,12 @@
             {
                 [self bf_startScanning];
                 self.scanningEnabled = NO;
+            }
+            
+            if (self.waitingToConnect)
+            {
+                self.waitingToConnect = NO;
+                [self.centralManager connectPeripheral:self.connectingPeripheral options:nil];
             }
             break;
         default:

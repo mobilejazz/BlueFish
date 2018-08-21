@@ -58,7 +58,7 @@
 {
     for (CBCharacteristic *characteristic in service.characteristics)
     {
-        NSLog(@"Reading characteristic: %@", [characteristic.UUID UUIDString]);
+//        NSLog(@"Reading characteristic: %@", [characteristic.UUID UUIDString]);
         if ([[characteristic.UUID UUIDString] isEqualToString:characteristicID])
         {
             return characteristic;
