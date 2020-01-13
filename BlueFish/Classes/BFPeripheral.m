@@ -242,7 +242,7 @@
         if (_BFCharacteristicsListReadBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFCharacteristicsListReadBlock(values, nil);
+                self->_BFCharacteristicsListReadBlock(values, nil);
             });
         }
     }
@@ -257,7 +257,7 @@
     if (_BFServiceDiscoveryBlock)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            _BFServiceDiscoveryBlock(services, error);
+            self->_BFServiceDiscoveryBlock(services, error);
         });
     }
 }
@@ -269,7 +269,7 @@
         if (_BFCharacteristicDiscoveryBlock)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                _BFCharacteristicDiscoveryBlock(error);
+                self->_BFCharacteristicDiscoveryBlock(error);
             });
         }
     }
@@ -292,7 +292,7 @@
             if (_BFCharacteristicsListReadBlock)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    _BFCharacteristicsListReadBlock(values, error);
+                    self->_BFCharacteristicsListReadBlock(values, error);
                 });
             }
             return;
@@ -311,7 +311,7 @@
         if ([_notificationDelegate respondsToSelector:@selector(peripheral:didNotifyValue:forCharacteristicID:)])
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [_notificationDelegate peripheral:self didNotifyValue:characteristic.value forCharacteristicID:[characteristic.UUID UUIDString]];
+                [self->_notificationDelegate peripheral:self didNotifyValue:characteristic.value forCharacteristicID:[characteristic.UUID UUIDString]];
             });
         }
     }
@@ -331,7 +331,7 @@
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             notificationBlock(error);
-            [_characteristicNotificationSubscriptionBlocks removeObjectForKey:[characteristic.UUID UUIDString]];
+            [self->_characteristicNotificationSubscriptionBlocks removeObjectForKey:[characteristic.UUID UUIDString]];
         });
     }
 }

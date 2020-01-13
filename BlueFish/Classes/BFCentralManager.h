@@ -66,7 +66,7 @@
  *  Launch scan for nearby devices that expose the services passed as parameter
  *
  *  @param services    An array of CBUUID indicating the services to scan for
- *  @param updateBLock A block to be executed each time there's an update in the devices discovery
+ *  @param updateBlock A block to be executed each time there's an update in the devices discovery
  */
 - (void)startScanningWithServices:(NSArray <CBUUID *> * _Nullable)services updateBlock:(void (^_Nonnull)(BFPeripheral * _Nullable peripheral, NSError * _Nullable error))updateBlock;
 
@@ -105,7 +105,6 @@
  *  Retrieve peripheral cached in the CoreBluetooth stack. To be used before scanning for nearby peripherals.
  *
  *  @param ID              The ID of the peripheral to search for
- *  @param completionBlock A block to be executed on completion, with the the peripheral if existing or an error.
  */
 - (BFPeripheral *_Nullable)retrievePeripheralWithID:(NSString * _Nonnull)ID;
 
