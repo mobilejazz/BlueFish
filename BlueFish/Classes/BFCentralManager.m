@@ -308,7 +308,9 @@
     NSArray *peripherals = [NSArray array];
     for (CBPeripheral * p in cbPeripherals)
     {
-        peripherals = [peripherals arrayByAddingObject:[[BFPeripheral alloc] initWithPeripheral:p]];
+        BFPeripheral *peripheral= [[BFPeripheral alloc] initWithPeripheral:p];
+        _peripheralList[p] = peripheral;
+        peripherals = [peripherals arrayByAddingObject:peripheral];
     }
     
     if ([self.delegate respondsToSelector:@selector(didRestoreSessionWithPeripherals:scanningServices:)])

@@ -46,14 +46,14 @@
 
 #pragma mark - Initialization
 
-- (instancetype)init;
+- (instancetype _Nonnull)init;
 
 /**
  *  When initializing a Central Manager indicating a tag Core Bluetooth will observe
  *  the subscribed BLE notifications even after the app has been closed.
  *  See "Performing Long-Term Actions in the Background" in the CB documentation
  */
-- (instancetype)initWithLongTermTag:(NSString * _Nullable)tag;
+- (instancetype _Nonnull)initWithLongTermTag:(NSString * _Nullable)tag;
 
 #pragma mark - Scan methods
 
@@ -68,7 +68,7 @@
  *  @param services    An array of CBUUID indicating the services to scan for
  *  @param updateBLock A block to be executed each time there's an update in the devices discovery
  */
-- (void)startScanningWithServices:(NSArray <CBUUID *> * _Nonnull)services updateBlock:(void (^)(BFPeripheral * _Nullable peripheral, NSError * _Nullable error))updateBlock;
+- (void)startScanningWithServices:(NSArray <CBUUID *> * _Nullable)services updateBlock:(void (^_Nonnull)(BFPeripheral * _Nullable peripheral, NSError * _Nullable error))updateBlock;
 
 /**
  *  Stop the scan of devices
@@ -107,6 +107,6 @@
  *  @param ID              The ID of the peripheral to search for
  *  @param completionBlock A block to be executed on completion, with the the peripheral if existing or an error.
  */
-- (BFPeripheral *)retrievePeripheralWithID:(NSString * _Nonnull)ID;
+- (BFPeripheral *_Nullable)retrievePeripheralWithID:(NSString * _Nonnull)ID;
 
 @end

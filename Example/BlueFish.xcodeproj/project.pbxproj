@@ -248,7 +248,7 @@
 				ORGANIZATIONNAME = "Paolo Tagliani";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = Q7Q85ZV6X9;
+						DevelopmentTeam = 9YHGX7ST8H;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -260,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -516,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = Q7Q85ZV6X9;
+				DEVELOPMENT_TEAM = 9YHGX7ST8H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlueFish/BlueFish-Prefix.pch";
 				INFOPLIST_FILE = "BlueFish/BlueFish-Info.plist";
@@ -533,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = Q7Q85ZV6X9;
+				DEVELOPMENT_TEAM = 9YHGX7ST8H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlueFish/BlueFish-Prefix.pch";
 				INFOPLIST_FILE = "BlueFish/BlueFish-Info.plist";

@@ -27,6 +27,6 @@
  *
  *  @return A newly instantiated instance
  */
-- (instancetype)initWithPeripheral:(CBPeripheral *)btPeripheral;
+- (instancetype _Nonnull)initWithPeripheral:(CBPeripheral * _Nonnull)btPeripheral;
 
 @end

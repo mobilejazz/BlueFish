@@ -21,20 +21,20 @@
 
 @protocol BFNotificationDelegate <NSObject>
 
-- (void)peripheral:(BFPeripheral *)peripheral didNotifyValue:(NSData *)value forCharacteristicID:(NSString *)characteristicID;
+- (void)peripheral:(BFPeripheral *_Nonnull)peripheral didNotifyValue:(NSData * _Nonnull)value forCharacteristicID:(NSString * _Nonnull)characteristicID;
 
 @end
 
 @interface BFPeripheral : NSObject <CBPeripheralDelegate>
 
-@property (nonatomic, strong, readonly) CBPeripheral *BTPeripheral;
-@property (nonatomic, strong, readonly) NSString *identifier;
+@property (nonatomic, strong, readonly, nonnull) CBPeripheral *BTPeripheral;
+@property (nonatomic, strong, readonly, nonnull) NSString *identifier;
 @property (nonatomic, assign, readonly) BOOL isConnected;
 
-@property (nonatomic, strong, readonly) NSArray <CBService *> *services;
-@property (nonatomic, strong, readonly) NSArray <CBCharacteristic *> *characteristics;
+@property (nonatomic, strong, readonly, nullable) NSArray <CBService *> *services;
+@property (nonatomic, strong, readonly, nullable) NSArray <CBCharacteristic *> *characteristics;
 
-@property (nonatomic, weak, readwrite) id <BFNotificationDelegate> notificationDelegate;
+@property (nonatomic, weak, readwrite, nullable) id <BFNotificationDelegate> notificationDelegate;
 
 #pragma mark - Getters
 
@@ -45,7 +45,7 @@
  *
  *  @return An NSData with the value of the characteristic or nil
  */
-- (NSData *)getValueForCharacteristic:(NSString *)characteristicID;
+- (NSData * _Nullable)getValueForCharacteristic:(NSString *_Nonnull)characteristicID;
 
 #pragma mark - Setup methods
 
@@ -54,21 +54,21 @@
  *
  *  @param completionBlock The block to be executed on completion, with the error passed as parameter
  */
-- (void)setupPeripheralForUse:(void (^)(NSError *error))completionBlock;
+- (void)setupPeripheralForUse:(void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 
 /**
  *  List all the service in the current peripheral.
  *
  *  @param completionBlock The block to be executed on completion
  */
-- (void)listServices:(void (^)(NSArray <CBService *> *services, NSError *error))completionBlock;
+- (void)listServices:(void (^_Nonnull)(NSArray <CBService *> * _Nullable services, NSError * _Nullable error))completionBlock;
 
 /**
  *  List all the characteristic of the current peripheral and of all services
  *
  *  @param completionBlock The block to be executed on completion
  */
-- (void)listCharacteristics:(void (^)(NSError *error))completionBlock;
+- (void)listCharacteristics:(void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 
 #pragma mark - Read methods
 
@@ -78,7 +78,7 @@
  *  @param characteristicID The ID of the characteristic to read
  *  @param completionBlock  The block to be executed on completion
  */
-- (void)readCharacteristic:(NSString *)characteristicID completionBlock:(void (^)(NSData *, NSError *))completionBlock;
+- (void)readCharacteristic:(NSString * _Nonnull)characteristicID completionBlock:(void (^_Nonnull)(NSData *_Nullable, NSError *_Nullable))completionBlock;
 
 /**
  *  Read a list of characteristics value
@@ -86,7 +86,7 @@
  *  @param characteristicsID An array of characteristics ID to be read
  *  @param completionBlock   A block to be executed on completion
  */
-- (void)readCharacteristics:(NSArray <NSString *> *)characteristicsID completionBlock:(void (^)(NSDictionary <NSString *, NSData *> *values, NSError *error))completionBlock;
+- (void)readCharacteristics:(NSArray <NSString *> * _Nonnull)characteristicsID completionBlock:(void (^_Nonnull)(NSDictionary <NSString *, NSData *> * _Nullable values, NSError * _Nullable error))completionBlock;
 
 #pragma mark - Write method
 
@@ -97,7 +97,7 @@
  *  @param data             The data to write
  *  @param completionBlock  A block to be executed on completion
  */
-- (void)writeCharacteristic:(NSString *)characteristicID data:(NSData *)data completionBlock:(void (^)(NSError *error))completionBlock;
+- (void)writeCharacteristic:(NSString * _Nonnull)characteristicID data:(NSData * _Nonnull)data completionBlock:(void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 
 #pragma mark - Notifications
 
@@ -107,13 +107,13 @@
  *  @param characteristicID The characteristic ID
  *  @param completionBlock  A block to be executed on completion
  */
-- (void)subscribeCharacteristicNotification:(NSString *)characteristicID completionBlock:(void (^)(NSError *error))completionBlock;
+- (void)subscribeCharacteristicNotification:(NSString * _Nonnull)characteristicID completionBlock:(void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 
 /**
  *  Unsubscribe to notification on a given characteristic and removes related completion block 
  *
  *  @param characteristicID The characteristic ID
  */
-- (void)unsubscribeCharacteristicNotification:(NSString *)characteristicID;
+- (void)unsubscribeCharacteristicNotification:(NSString * _Nonnull)characteristicID;
 
 @end
