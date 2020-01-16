@@ -5,7 +5,5 @@ target 'BlueFish_Example' do
 
   target 'BlueFish_Tests' do
     inherit! :search_paths
-
-    
   end
 end
