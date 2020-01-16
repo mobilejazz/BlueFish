@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BlueFish'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'CoreBluetooth with block-based APIs'
   s.description      = "Simple wrapper around CoreBluetooth that replace delegate based API with block based API"
   s.homepage         = 'https://github.com/mobilejazz/BlueFish'
