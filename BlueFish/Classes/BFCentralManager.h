@@ -24,6 +24,7 @@
 - (void)didRestoreSessionWithPeripherals:(NSArray<BFPeripheral *> * _Nullable)peripherals scanningServices:(NSArray<CBUUID *> *_Nullable)scanningServices;
 - (void)didDisconnectPeripheral:(BFPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
 - (void)didTurnOffBluetooth;
+- (void)didTurnOnBluetooth;
 
 @end
 
@@ -54,6 +55,11 @@
  *  See "Performing Long-Term Actions in the Background" in the CB documentation
  */
 - (instancetype _Nonnull)initWithLongTermTag:(NSString * _Nullable)tag;
+
+/**
+ * Returns TRUE if bluetooth is OFF.
+ */
+- (BOOL)isBluetoothOff;
 
 #pragma mark - Scan methods
 
@@ -100,6 +106,13 @@
 - (void)cancelConnectionToPeripheral:(BFPeripheral * _Nonnull)peripheral;
 
 #pragma mark - Device retrieval
+/**
+*  Retrieve connected peripherals.
+*
+*  @param services         Array of services
+*/
+- (void)retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID*> * _Nonnull)services
+                                 completionBlock:(nonnull void (^)(NSArray<BFPeripheral*>* _Nonnull))completionBlock;
 
 /**
  *  Retrieve peripheral cached in the CoreBluetooth stack. To be used before scanning for nearby peripherals.
