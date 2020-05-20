@@ -37,9 +37,12 @@
 @property (nonatomic, strong, readwrite) NSArray *servicesToScan;
 @property (nonatomic, assign, readwrite) BOOL scanningEnabled;
 @property (nonatomic, assign, readwrite) BOOL waitingToConnect;
+@property (nonatomic, strong, readwrite) NSArray<CBUUID*> *servicesForPeripheralsToRetrieve;
 
 @property (nonatomic, copy, readwrite) void (^ BFDeviceScanBlock)(BFPeripheral *peripheral, NSError *error);
 @property (nonatomic, copy, readwrite) void (^ BFPeripheralConnectionBlock)(NSError *error);
+@property (nonatomic, copy, readwrite) void (^ BFRetrieveConnectedDevicesBlock)(NSArray<BFPeripheral*>*);
+
 
 @end
 
@@ -76,6 +79,11 @@
 
 #pragma mark - Public methods
 
+- (BOOL)isBluetoothOff
+{
+    return self.centralManager.state == CBCentralManagerStatePoweredOff;
+}
+
 #pragma mark Scan methods
 
 - (void)startScanningWithUpdateBlock:(void (^)(BFPeripheral *peripheral, NSError *error))updateBlock
@@ -98,6 +106,24 @@
 }
 
 #pragma mark - Retrieve peripheral
+
+- (void)retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID*> *)services
+                                 completionBlock:(void (^)(NSArray<BFPeripheral*>*))completionBlock
+{
+    if (@available(iOS 10.0, *)) {
+        if (_centralManager.state == CBManagerStatePoweredOn) {
+            NSArray *peripherals = [_centralManager retrieveConnectedPeripheralsWithServices:services];
+            NSMutableArray *array = [NSMutableArray arrayWithCapacity:peripherals.count];
+            [peripherals enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [array addObject:[[BFPeripheral alloc] initWithPeripheral:obj]];
+            }];
+            completionBlock(array);
+        } else {
+            self.servicesForPeripheralsToRetrieve = services;
+            self.BFRetrieveConnectedDevicesBlock = completionBlock;
+        }
+    }
+}
 
 - (BFPeripheral *)retrievePeripheralWithID:(NSString *)ID
 {
@@ -227,6 +253,13 @@
             }
             break;
         case CBCentralManagerStatePoweredOn:
+            if ([_delegate respondsToSelector:@selector(didTurnOnBluetooth)])
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self->_delegate didTurnOnBluetooth];
+                });
+
+            }
             if (_scanningEnabled)
             {
                 [self bf_startScanning];
@@ -237,6 +270,17 @@
             {
                 self.waitingToConnect = NO;
                 [self.centralManager connectPeripheral:self.connectingPeripheral options:nil];
+            }
+            
+            if (self.servicesForPeripheralsToRetrieve != nil) {
+                NSArray *peripherals = [_centralManager retrieveConnectedPeripheralsWithServices:self.servicesForPeripheralsToRetrieve];
+                NSMutableArray *array = [NSMutableArray arrayWithCapacity:peripherals.count];
+                [peripherals enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    [array addObject:[[BFPeripheral alloc] initWithPeripheral:obj]];
+                }];
+                self.BFRetrieveConnectedDevicesBlock(array);
+                self.BFRetrieveConnectedDevicesBlock = nil;
+                self.servicesForPeripheralsToRetrieve = nil;
             }
             break;
         default:
